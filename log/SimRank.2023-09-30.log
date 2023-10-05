@@ -1,0 +1,795 @@
+05:16:22.760 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:16:22.765 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:16:22.768 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:16:22.790 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+05:16:22.790 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:16:22.790 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:16:22.790 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:16:22.790 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:16:22.792 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+05:16:22.792 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:16:22.794 [main] INFO  - divideGraph: Initiating the loading process from with Graph HashMap(80 -> Set(62), 28 -> Set(79, 38), 45 -> Set(15, 80), 98 -> Set(3), 34 -> Set(78, 30), 67 -> Set(57), 93 -> Set(26), 12 -> Set(28), 66 -> Set(29, 12, 40, 18), 89 -> Set(30), 51 -> Set(45, 88), 84 -> Set(59), 8 -> Set(52, 47), 73 -> Set(85, 39, 47), 78 -> Set(9, 82, 99), 19 -> Set(31), 100 -> Set(69), 23 -> Set(100), 62 -> Set(9, 77), 4 -> Set(17), 88 -> Set(55, 8, 73), 77 -> Set(86), 40 -> Set(87), 15 -> Set(55, 2), 11 -> Set(72, 46, 50), 90 -> Set(10, 63), 9 -> Set(34), 44 -> Set(5), 33 -> Set(83, 10, 39), 22 -> Set(82), 56 -> Set(91, 10), 55 -> Set(93), 26 -> Set(29, 79, 96), 50 -> Set(25), 37 -> Set(85, 81), 68 -> Set(65), 61 -> Set(87), 13 -> Set(67), 46 -> Set(15, 35), 99 -> Set(58, 72), 24 -> Set(74), 94 -> Set(5), 83 -> Set(27), 35 -> Set(91, 94), 16 -> Set(71), 79 -> Set(72), 5 -> Set(54), 72 -> Set(11), 10 -> Set(56), 59 -> Set(7), 87 -> Set(14), 48 -> Set(6), 21 -> Set(78), 76 -> Set(57), 54 -> Set(37, 96, 89), 43 -> Set(32), 65 -> Set(4), 71 -> Set(96), 57 -> Set(41), 32 -> Set(90), 6 -> Set(94), 36 -> Set(44), 1 -> Set(68), 39 -> Set(87), 82 -> Set(20, 35), 49 -> Set(19), 17 -> Set(77), 25 -> Set(33), 60 -> Set(92), 14 -> Set(11, 42, 83, 22), 47 -> Set(43), 31 -> Set(24), 95 -> Set(84, 20), 96 -> Set(23, 47), 69 -> Set(66, 21), 58 -> Set(75), 64 -> Set(61), 53 -> Set(45), 42 -> Set(53), 75 -> Set(47, 94, 30), 0 -> Set(1, 49), 20 -> Set(82, 95, 48), 27 -> Set(13), 70 -> Set(35, 80, 23), 2 -> Set(51), 86 -> Set(16), 38 -> Set(60, 46), 81 -> Set(98), 92 -> Set(97), 18 -> Set(2), 30 -> Set(98), 7 -> Set(12), 97 -> Set(84, 72), 29 -> Set(8), 41 -> Set(76), 63 -> Set(73), 3 -> Set(84, 12), 74 -> Set(36), 91 -> Set(64), 52 -> Set(70), 85 -> Set(58, 22)) and numPieces 3 and outputDir /Users/seyfal/Desktop/CS441 Cloud/shards and generateFiles false
+05:16:22.795 [main] INFO  - divideGraph: Dividing graph into pieces.
+05:16:22.801 [main] INFO  - divideGraph: Created an array of empty maps, currently there are3pieces
+05:16:22.802 [main] INFO  - divideGraph: Assigned each node to a piece, currently there are3pieces
+05:16:22.802 [main] INFO  - divideGraph: Graph divided successfully.
+05:16:22.802 [main] INFO  - divideGraph: Initiating the loading process from with Graph HashMap(80 -> Set(62), 75 -> Set(47, 94, 30), 28 -> Set(107, 79, 38), 45 -> Set(15, 51, 80), 98 -> Set(3), 34 -> Set(78, 30), 67 -> Set(57), 12 -> Set(28), 66 -> Set(29, 12, 40, 18), 89 -> Set(30), 51 -> Set(45, 88), 84 -> Set(59, 101), 8 -> Set(52, 47), 73 -> Set(85, 39, 47), 78 -> Set(9, 82, 99), 19 -> Set(31), 100 -> Set(69), 23 -> Set(100), 62 -> Set(9, 77), 4 -> Set(17), 88 -> Set(55, 8, 73), 77 -> Set(86), 40 -> Set(87), 15 -> Set(55, 2), 11 -> Set(46, 50, 104, 72), 90 -> Set(10, 63), 9 -> Set(34, 62), 44 -> Set(5), 33 -> Set(83, 10, 39), 22 -> Set(82), 56 -> Set(91, 10), 26 -> Set(29, 79, 96), 50 -> Set(25), 37 -> Set(85, 81), 68 -> Set(65), 61 -> Set(87), 13 -> Set(67), 46 -> Set(15, 35), 99 -> Set(58, 72), 24 -> Set(74), 94 -> Set(5), 83 -> Set(27), 35 -> Set(91, 94, 108), 16 -> Set(71), 79 -> Set(72), 5 -> Set(54), 72 -> Set(11), 10 -> Set(56), 59 -> Set(7), 48 -> Set(6), 21 -> Set(78), 76 -> Set(57), 54 -> Set(37, 96, 89), 43 -> Set(32), 65 -> Set(4), 71 -> Set(96), 57 -> Set(41), 32 -> Set(90), 6 -> Set(94), 36 -> Set(44), 1 -> Set(68), 39 -> Set(87, 106), 82 -> Set(20, 35), 49 -> Set(19), 17 -> Set(77), 25 -> Set(33), 60 -> Set(92), 47 -> Set(43, 105), 31 -> Set(24), 95 -> Set(84, 20), 96 -> Set(23, 47), 69 -> Set(66, 21), 58 -> Set(75), 64 -> Set(61), 53 -> Set(45), 0 -> Set(1, 49), 20 -> Set(82, 95, 109, 48), 27 -> Set(13), 70 -> Set(35, 80, 23), 2 -> Set(51), 86 -> Set(16), 38 -> Set(60, 46), 81 -> Set(98), 92 -> Set(102, 97), 18 -> Set(2), 30 -> Set(98), 7 -> Set(12), 97 -> Set(84, 72), 29 -> Set(8), 41 -> Set(76), 63 -> Set(73), 3 -> Set(84, 12), 74 -> Set(36, 103), 91 -> Set(64), 52 -> Set(70), 85 -> Set(37, 58, 22)) and numPieces 3 and outputDir /Users/seyfal/Desktop/CS441 Cloud/shards and generateFiles false
+05:16:22.802 [main] INFO  - divideGraph: Dividing graph into pieces.
+05:16:22.803 [main] INFO  - divideGraph: Created an array of empty maps, currently there are3pieces
+05:16:22.803 [main] INFO  - divideGraph: Assigned each node to a piece, currently there are3pieces
+05:16:22.803 [main] INFO  - divideGraph: Graph divided successfully.
+05:16:22.803 [main] INFO  - shuffleGraph: Shuffling graph pieces.
+05:16:22.810 [main] INFO  - shuffleGraph: Graph pieces shuffled successfully.
+05:23:15.430 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:15.436 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:15.438 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:15.462 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+05:23:15.462 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:15.462 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:15.462 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:15.462 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:15.464 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+05:23:15.464 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:15.465 [main] INFO  - divideGraph: Initiating the division process...
+05:23:15.475 [main] INFO  - divideGraph: Initiating the division process...
+05:23:15.476 [main] INFO  - shuffleGraph: Shuffling graph pieces...
+05:23:31.406 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:31.411 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:31.414 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:31.437 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+05:23:31.437 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:23:31.437 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:31.437 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:31.437 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:31.439 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+05:23:31.439 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:23:31.440 [main] INFO  - divideGraph: Initiating the division process...
+05:23:31.449 [main] INFO  - divideGraph: Initialized 3 number of empty pieces.
+05:23:31.450 [main] INFO  - divideGraph: Initiating the division process...
+05:23:31.450 [main] INFO  - divideGraph: Initialized 3 number of empty pieces.
+05:23:31.451 [main] INFO  - shuffleGraph: Shuffling graph pieces...
+05:24:28.278 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:24:28.283 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:24:28.286 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:24:28.309 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+05:24:28.309 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:24:28.309 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:24:28.309 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:24:28.309 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:24:28.311 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+05:24:28.311 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:24:28.314 [main] INFO  - divideGraph: Initiating the division process for Graph HashMap(80 -> Set(62), 28 -> Set(79, 38), 45 -> Set(15, 80), 98 -> Set(3), 34 -> Set(78, 30), 67 -> Set(57), 93 -> Set(26), 12 -> Set(28), 66 -> Set(29, 12, 40, 18), 89 -> Set(30), 51 -> Set(45, 88), 84 -> Set(59), 8 -> Set(52, 47), 73 -> Set(85, 39, 47), 78 -> Set(9, 82, 99), 19 -> Set(31), 100 -> Set(69), 23 -> Set(100), 62 -> Set(9, 77), 4 -> Set(17), 88 -> Set(55, 8, 73), 77 -> Set(86), 40 -> Set(87), 15 -> Set(55, 2), 11 -> Set(72, 46, 50), 90 -> Set(10, 63), 9 -> Set(34), 44 -> Set(5), 33 -> Set(83, 10, 39), 22 -> Set(82), 56 -> Set(91, 10), 55 -> Set(93), 26 -> Set(29, 79, 96), 50 -> Set(25), 37 -> Set(85, 81), 68 -> Set(65), 61 -> Set(87), 13 -> Set(67), 46 -> Set(15, 35), 99 -> Set(58, 72), 24 -> Set(74), 94 -> Set(5), 83 -> Set(27), 35 -> Set(91, 94), 16 -> Set(71), 79 -> Set(72), 5 -> Set(54), 72 -> Set(11), 10 -> Set(56), 59 -> Set(7), 87 -> Set(14), 48 -> Set(6), 21 -> Set(78), 76 -> Set(57), 54 -> Set(37, 96, 89), 43 -> Set(32), 65 -> Set(4), 71 -> Set(96), 57 -> Set(41), 32 -> Set(90), 6 -> Set(94), 36 -> Set(44), 1 -> Set(68), 39 -> Set(87), 82 -> Set(20, 35), 49 -> Set(19), 17 -> Set(77), 25 -> Set(33), 60 -> Set(92), 14 -> Set(11, 42, 83, 22), 47 -> Set(43), 31 -> Set(24), 95 -> Set(84, 20), 96 -> Set(23, 47), 69 -> Set(66, 21), 58 -> Set(75), 64 -> Set(61), 53 -> Set(45), 42 -> Set(53), 75 -> Set(47, 94, 30), 0 -> Set(1, 49), 20 -> Set(82, 95, 48), 27 -> Set(13), 70 -> Set(35, 80, 23), 2 -> Set(51), 86 -> Set(16), 38 -> Set(60, 46), 81 -> Set(98), 92 -> Set(97), 18 -> Set(2), 30 -> Set(98), 7 -> Set(12), 97 -> Set(84, 72), 29 -> Set(8), 41 -> Set(76), 63 -> Set(73), 3 -> Set(84, 12), 74 -> Set(36), 91 -> Set(64), 52 -> Set(70), 85 -> Set(58, 22)) into 3 pieces...
+05:24:28.323 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:24:28.324 [main] INFO  - divideGraph: Initiating the division process for Graph HashMap(80 -> Set(62), 75 -> Set(47, 94, 30), 28 -> Set(107, 79, 38), 45 -> Set(15, 51, 80), 98 -> Set(3), 34 -> Set(78, 30), 67 -> Set(57), 12 -> Set(28), 66 -> Set(29, 12, 40, 18), 89 -> Set(30), 51 -> Set(45, 88), 84 -> Set(59, 101), 8 -> Set(52, 47), 73 -> Set(85, 39, 47), 78 -> Set(9, 82, 99), 19 -> Set(31), 100 -> Set(69), 23 -> Set(100), 62 -> Set(9, 77), 4 -> Set(17), 88 -> Set(55, 8, 73), 77 -> Set(86), 40 -> Set(87), 15 -> Set(55, 2), 11 -> Set(46, 50, 104, 72), 90 -> Set(10, 63), 9 -> Set(34, 62), 44 -> Set(5), 33 -> Set(83, 10, 39), 22 -> Set(82), 56 -> Set(91, 10), 26 -> Set(29, 79, 96), 50 -> Set(25), 37 -> Set(85, 81), 68 -> Set(65), 61 -> Set(87), 13 -> Set(67), 46 -> Set(15, 35), 99 -> Set(58, 72), 24 -> Set(74), 94 -> Set(5), 83 -> Set(27), 35 -> Set(91, 94, 108), 16 -> Set(71), 79 -> Set(72), 5 -> Set(54), 72 -> Set(11), 10 -> Set(56), 59 -> Set(7), 48 -> Set(6), 21 -> Set(78), 76 -> Set(57), 54 -> Set(37, 96, 89), 43 -> Set(32), 65 -> Set(4), 71 -> Set(96), 57 -> Set(41), 32 -> Set(90), 6 -> Set(94), 36 -> Set(44), 1 -> Set(68), 39 -> Set(87, 106), 82 -> Set(20, 35), 49 -> Set(19), 17 -> Set(77), 25 -> Set(33), 60 -> Set(92), 47 -> Set(43, 105), 31 -> Set(24), 95 -> Set(84, 20), 96 -> Set(23, 47), 69 -> Set(66, 21), 58 -> Set(75), 64 -> Set(61), 53 -> Set(45), 0 -> Set(1, 49), 20 -> Set(82, 95, 109, 48), 27 -> Set(13), 70 -> Set(35, 80, 23), 2 -> Set(51), 86 -> Set(16), 38 -> Set(60, 46), 81 -> Set(98), 92 -> Set(102, 97), 18 -> Set(2), 30 -> Set(98), 7 -> Set(12), 97 -> Set(84, 72), 29 -> Set(8), 41 -> Set(76), 63 -> Set(73), 3 -> Set(84, 12), 74 -> Set(36, 103), 91 -> Set(64), 52 -> Set(70), 85 -> Set(37, 58, 22)) into 3 pieces...
+05:24:28.324 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:24:28.325 [main] INFO  - shuffleGraph: Shuffling graph pieces...
+05:26:40.589 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:26:40.594 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:26:40.597 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 5 -> 54
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 54 -> 37
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 54 -> 96
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 54 -> 89
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 84 -> 59
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 59 -> 7
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 7 -> 12
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 12 -> 28
+05:26:40.598 [main] DEBUG - loadGraph: Processing a line: 69 -> 66
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 69 -> 21
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 66 -> 29
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 66 -> 12
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 66 -> 40
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 66 -> 18
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 29 -> 8
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 8 -> 52
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 8 -> 47
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 52 -> 70
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 47 -> 43
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 28 -> 79
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 28 -> 38
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 40 -> 87
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 87 -> 14
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 18 -> 2
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 2 -> 51
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 51 -> 45
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 51 -> 88
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 21 -> 78
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 78 -> 9
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 78 -> 82
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 78 -> 99
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 0 -> 1
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 0 -> 49
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 1 -> 68
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 49 -> 19
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 88 -> 55
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 88 -> 8
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 88 -> 73
+05:26:40.599 [main] DEBUG - loadGraph: Processing a line: 55 -> 93
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 93 -> 26
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 73 -> 85
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 73 -> 39
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 73 -> 47
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 85 -> 58
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 85 -> 22
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 39 -> 87
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 43 -> 32
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 32 -> 90
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 90 -> 10
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 90 -> 63
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 10 -> 56
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 56 -> 91
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 56 -> 10
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 91 -> 64
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 42 -> 53
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 53 -> 45
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 24 -> 74
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 74 -> 36
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 37 -> 85
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 37 -> 81
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 81 -> 98
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 25 -> 33
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 33 -> 83
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 33 -> 10
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 33 -> 39
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 70 -> 35
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 70 -> 80
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 70 -> 23
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 14 -> 11
+05:26:40.600 [main] DEBUG - loadGraph: Processing a line: 14 -> 42
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 14 -> 83
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 14 -> 22
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 11 -> 72
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 11 -> 46
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 11 -> 50
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 72 -> 11
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 46 -> 15
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 46 -> 35
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 50 -> 25
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 83 -> 27
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 22 -> 82
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 20 -> 82
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 20 -> 95
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 20 -> 48
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 82 -> 20
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 82 -> 35
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 95 -> 84
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 95 -> 20
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 48 -> 6
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 15 -> 55
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 15 -> 2
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 35 -> 91
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 35 -> 94
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 94 -> 5
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 26 -> 29
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 26 -> 79
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 26 -> 96
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 79 -> 72
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 96 -> 23
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 96 -> 47
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 57 -> 41
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 41 -> 76
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 76 -> 57
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 9 -> 34
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 34 -> 78
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 34 -> 30
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 99 -> 58
+05:26:40.601 [main] DEBUG - loadGraph: Processing a line: 99 -> 72
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 61 -> 87
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 89 -> 30
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 30 -> 98
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 98 -> 3
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 68 -> 65
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 36 -> 44
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 44 -> 5
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 6 -> 94
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 60 -> 92
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 92 -> 97
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 58 -> 75
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 75 -> 47
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 75 -> 94
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 75 -> 30
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 80 -> 62
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 23 -> 100
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 100 -> 69
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 38 -> 60
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 38 -> 46
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 97 -> 84
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 97 -> 72
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 65 -> 4
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 4 -> 17
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 17 -> 77
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 45 -> 15
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 45 -> 80
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 77 -> 86
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 86 -> 16
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 13 -> 67
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 67 -> 57
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 64 -> 61
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 27 -> 13
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 71 -> 96
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 19 -> 31
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 31 -> 24
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 16 -> 71
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 3 -> 84
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 3 -> 12
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 62 -> 9
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 62 -> 77
+05:26:40.602 [main] DEBUG - loadGraph: Processing a line: 63 -> 73
+05:26:40.622 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+05:26:40.622 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:26:40.622 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:26:40.622 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:26:40.623 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 5 -> 54
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 54 -> 37
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 54 -> 96
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 54 -> 89
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 52 -> 70
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 70 -> 35
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 70 -> 80
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 70 -> 23
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 69 -> 66
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 69 -> 21
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 66 -> 29
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 66 -> 12
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 66 -> 40
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 66 -> 18
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 29 -> 8
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 8 -> 52
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 8 -> 47
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 47 -> 43
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 47 -> 105
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 12 -> 28
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 28 -> 107
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 28 -> 79
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 28 -> 38
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 40 -> 87
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 18 -> 2
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 2 -> 51
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 51 -> 45
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 51 -> 88
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 21 -> 78
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 78 -> 9
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 78 -> 82
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 78 -> 99
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 0 -> 1
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 0 -> 49
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 1 -> 68
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 49 -> 19
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 88 -> 55
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 88 -> 8
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 88 -> 73
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 73 -> 85
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 73 -> 39
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 73 -> 47
+05:26:40.623 [main] DEBUG - loadGraph: Processing a line: 85 -> 37
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 85 -> 58
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 85 -> 22
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 39 -> 87
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 39 -> 106
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 43 -> 32
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 32 -> 90
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 90 -> 10
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 90 -> 63
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 10 -> 56
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 56 -> 91
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 56 -> 10
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 91 -> 64
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 24 -> 74
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 74 -> 36
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 74 -> 103
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 37 -> 85
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 37 -> 81
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 81 -> 98
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 25 -> 33
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 33 -> 83
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 33 -> 10
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 33 -> 39
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 20 -> 82
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 20 -> 95
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 20 -> 109
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 20 -> 48
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 82 -> 20
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 82 -> 35
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 95 -> 84
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 95 -> 20
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 48 -> 6
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 46 -> 15
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 46 -> 35
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 15 -> 55
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 15 -> 2
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 35 -> 91
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 35 -> 94
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 35 -> 108
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 94 -> 5
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 57 -> 41
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 41 -> 76
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 76 -> 57
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 9 -> 34
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 9 -> 62
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 34 -> 78
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 34 -> 30
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 62 -> 9
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 62 -> 77
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 99 -> 58
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 99 -> 72
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 84 -> 59
+05:26:40.624 [main] DEBUG - loadGraph: Processing a line: 84 -> 101
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 59 -> 7
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 7 -> 12
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 61 -> 87
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 89 -> 30
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 30 -> 98
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 98 -> 3
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 68 -> 65
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 36 -> 44
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 44 -> 5
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 6 -> 94
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 60 -> 92
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 92 -> 102
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 92 -> 97
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 58 -> 75
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 75 -> 47
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 75 -> 94
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 75 -> 30
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 22 -> 82
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 80 -> 62
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 23 -> 100
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 100 -> 69
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 83 -> 27
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 79 -> 72
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 38 -> 60
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 38 -> 46
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 97 -> 84
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 97 -> 72
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 65 -> 4
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 4 -> 17
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 17 -> 77
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 72 -> 11
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 11 -> 46
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 11 -> 50
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 11 -> 104
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 11 -> 72
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 50 -> 25
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 53 -> 45
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 45 -> 15
+05:26:40.625 [main] DEBUG - loadGraph: Processing a line: 45 -> 51
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 45 -> 80
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 77 -> 86
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 86 -> 16
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 96 -> 23
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 96 -> 47
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 13 -> 67
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 67 -> 57
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 64 -> 61
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 27 -> 13
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 71 -> 96
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 19 -> 31
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 31 -> 24
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 16 -> 71
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 3 -> 84
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 3 -> 12
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 63 -> 73
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 26 -> 29
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 26 -> 79
+05:26:40.626 [main] DEBUG - loadGraph: Processing a line: 26 -> 96
+05:26:40.627 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+05:26:40.627 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:26:40.627 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+05:26:40.636 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:26:40.636 [main] DEBUG - divideGraph: Initialized pieces: [Lscala.collection.immutable.Map;@1caa0244
+05:26:40.637 [main] DEBUG - divideGraph: Pieces after division: [Lscala.collection.immutable.Map;@1caa0244
+05:26:40.637 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+05:26:40.638 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:26:40.638 [main] DEBUG - divideGraph: Initialized pieces: [Lscala.collection.immutable.Map;@231f98ef
+05:26:40.638 [main] DEBUG - divideGraph: Pieces after division: [Lscala.collection.immutable.Map;@231f98ef
+05:26:40.638 [main] INFO  - shuffleGraph: Shuffling graph pieces...
+05:26:40.644 [main] DEBUG - shuffleGraph: Shuffled Graph: HashMap(80 -> Set(62), 28 -> Set(107, 79, 38), 45 -> Set(15, 51, 80), 98 -> Set(3), 34 -> Set(78, 30), 67 -> Set(57), 93 -> Set(26), 12 -> Set(28), 66 -> Set(29, 12, 40, 18), 89 -> Set(30), 51 -> Set(45, 88), 84 -> Set(59, 101), 8 -> Set(52, 47), 73 -> Set(85, 39, 47), 78 -> Set(9, 82, 99), 19 -> Set(31), 100 -> Set(69), 23 -> Set(100), 62 -> Set(9, 77), 4 -> Set(17), 88 -> Set(55, 8, 73), 77 -> Set(86), 40 -> Set(87), 15 -> Set(55, 2), 11 -> Set(46, 50, 104, 72), 90 -> Set(10, 63), 9 -> Set(34, 62), 44 -> Set(5), 33 -> Set(83, 10, 39), 22 -> Set(82), 56 -> Set(91, 10), 55 -> Set(93), 26 -> Set(29, 79, 96), 50 -> Set(25), 37 -> Set(85, 81), 68 -> Set(65), 61 -> Set(87), 13 -> Set(67), 46 -> Set(15, 35), 99 -> Set(58, 72), 24 -> Set(74), 94 -> Set(5), 83 -> Set(27), 35 -> Set(91, 94, 108), 16 -> Set(71), 79 -> Set(72), 5 -> Set(54), 72 -> Set(11), 10 -> Set(56), 59 -> Set(7), 87 -> Set(14), 48 -> Set(6), 21 -> Set(78), 76 -> Set(57), 54 -> Set(37, 96, 89), 43 -> Set(32), 65 -> Set(4), 71 -> Set(96), 57 -> Set(41), 32 -> Set(90), 6 -> Set(94), 36 -> Set(44), 1 -> Set(68), 39 -> Set(87, 106), 82 -> Set(20, 35), 49 -> Set(19), 17 -> Set(77), 25 -> Set(33), 60 -> Set(92), 14 -> Set(11, 42, 83, 22), 47 -> Set(43, 105), 31 -> Set(24), 95 -> Set(84, 20), 96 -> Set(23, 47), 69 -> Set(66, 21), 58 -> Set(75), 64 -> Set(61), 53 -> Set(45), 42 -> Set(53), 75 -> Set(47, 94, 30), 0 -> Set(1, 49), 20 -> Set(82, 95, 109, 48), 27 -> Set(13), 70 -> Set(35, 80, 23), 2 -> Set(51), 86 -> Set(16), 38 -> Set(60, 46), 81 -> Set(98), 92 -> Set(102, 97), 18 -> Set(2), 30 -> Set(98), 7 -> Set(12), 97 -> Set(84, 72), 29 -> Set(8), 41 -> Set(76), 63 -> Set(73), 3 -> Set(84, 12), 74 -> Set(36, 103), 91 -> Set(64), 52 -> Set(70), 85 -> Set(37, 58, 22))
+05:28:48.203 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:28:48.208 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:28:48.211 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:28:48.211 [main] DEBUG - loadGraph: Processing a line: 5 -> 54
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 54 -> 37
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 54 -> 96
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 54 -> 89
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 84 -> 59
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 59 -> 7
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 7 -> 12
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 12 -> 28
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 69 -> 66
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 69 -> 21
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 66 -> 29
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 66 -> 12
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 66 -> 40
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 66 -> 18
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 29 -> 8
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 8 -> 52
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 8 -> 47
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 52 -> 70
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 47 -> 43
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 28 -> 79
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 28 -> 38
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 40 -> 87
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 87 -> 14
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 18 -> 2
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 2 -> 51
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 51 -> 45
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 51 -> 88
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 21 -> 78
+05:28:48.212 [main] DEBUG - loadGraph: Processing a line: 78 -> 9
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 78 -> 82
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 78 -> 99
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 0 -> 1
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 0 -> 49
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 1 -> 68
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 49 -> 19
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 88 -> 55
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 88 -> 8
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 88 -> 73
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 55 -> 93
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 93 -> 26
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 73 -> 85
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 73 -> 39
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 73 -> 47
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 85 -> 58
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 85 -> 22
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 39 -> 87
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 43 -> 32
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 32 -> 90
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 90 -> 10
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 90 -> 63
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 10 -> 56
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 56 -> 91
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 56 -> 10
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 91 -> 64
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 42 -> 53
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 53 -> 45
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 24 -> 74
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 74 -> 36
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 37 -> 85
+05:28:48.213 [main] DEBUG - loadGraph: Processing a line: 37 -> 81
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 81 -> 98
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 25 -> 33
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 33 -> 83
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 33 -> 10
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 33 -> 39
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 70 -> 35
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 70 -> 80
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 70 -> 23
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 14 -> 11
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 14 -> 42
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 14 -> 83
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 14 -> 22
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 11 -> 72
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 11 -> 46
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 11 -> 50
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 72 -> 11
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 46 -> 15
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 46 -> 35
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 50 -> 25
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 83 -> 27
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 22 -> 82
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 20 -> 82
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 20 -> 95
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 20 -> 48
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 82 -> 20
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 82 -> 35
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 95 -> 84
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 95 -> 20
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 48 -> 6
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 15 -> 55
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 15 -> 2
+05:28:48.214 [main] DEBUG - loadGraph: Processing a line: 35 -> 91
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 35 -> 94
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 94 -> 5
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 26 -> 29
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 26 -> 79
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 26 -> 96
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 79 -> 72
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 96 -> 23
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 96 -> 47
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 57 -> 41
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 41 -> 76
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 76 -> 57
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 9 -> 34
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 34 -> 78
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 34 -> 30
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 99 -> 58
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 99 -> 72
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 61 -> 87
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 89 -> 30
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 30 -> 98
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 98 -> 3
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 68 -> 65
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 36 -> 44
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 44 -> 5
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 6 -> 94
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 60 -> 92
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 92 -> 97
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 58 -> 75
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 75 -> 47
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 75 -> 94
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 75 -> 30
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 80 -> 62
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 23 -> 100
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 100 -> 69
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 38 -> 60
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 38 -> 46
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 97 -> 84
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 97 -> 72
+05:28:48.215 [main] DEBUG - loadGraph: Processing a line: 65 -> 4
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 4 -> 17
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 17 -> 77
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 45 -> 15
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 45 -> 80
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 77 -> 86
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 86 -> 16
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 13 -> 67
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 67 -> 57
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 64 -> 61
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 27 -> 13
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 71 -> 96
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 19 -> 31
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 31 -> 24
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 16 -> 71
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 3 -> 84
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 3 -> 12
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 62 -> 9
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 62 -> 77
+05:28:48.216 [main] DEBUG - loadGraph: Processing a line: 63 -> 73
+05:28:48.236 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+05:28:48.239 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:28:48.239 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:28:48.239 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:28:48.239 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 5 -> 54
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 54 -> 37
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 54 -> 96
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 54 -> 89
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 52 -> 70
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 70 -> 35
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 70 -> 80
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 70 -> 23
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 69 -> 66
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 69 -> 21
+05:28:48.239 [main] DEBUG - loadGraph: Processing a line: 66 -> 29
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 66 -> 12
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 66 -> 40
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 66 -> 18
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 29 -> 8
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 8 -> 52
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 8 -> 47
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 47 -> 43
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 47 -> 105
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 12 -> 28
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 28 -> 107
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 28 -> 79
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 28 -> 38
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 40 -> 87
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 18 -> 2
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 2 -> 51
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 51 -> 45
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 51 -> 88
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 21 -> 78
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 78 -> 9
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 78 -> 82
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 78 -> 99
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 0 -> 1
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 0 -> 49
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 1 -> 68
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 49 -> 19
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 88 -> 55
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 88 -> 8
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 88 -> 73
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 73 -> 85
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 73 -> 39
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 73 -> 47
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 85 -> 37
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 85 -> 58
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 85 -> 22
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 39 -> 87
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 39 -> 106
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 43 -> 32
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 32 -> 90
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 90 -> 10
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 90 -> 63
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 10 -> 56
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 56 -> 91
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 56 -> 10
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 91 -> 64
+05:28:48.240 [main] DEBUG - loadGraph: Processing a line: 24 -> 74
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 74 -> 36
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 74 -> 103
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 37 -> 85
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 37 -> 81
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 81 -> 98
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 25 -> 33
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 33 -> 83
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 33 -> 10
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 33 -> 39
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 20 -> 82
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 20 -> 95
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 20 -> 109
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 20 -> 48
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 82 -> 20
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 82 -> 35
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 95 -> 84
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 95 -> 20
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 48 -> 6
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 46 -> 15
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 46 -> 35
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 15 -> 55
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 15 -> 2
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 35 -> 91
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 35 -> 94
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 35 -> 108
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 94 -> 5
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 57 -> 41
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 41 -> 76
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 76 -> 57
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 9 -> 34
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 9 -> 62
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 34 -> 78
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 34 -> 30
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 62 -> 9
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 62 -> 77
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 99 -> 58
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 99 -> 72
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 84 -> 59
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 84 -> 101
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 59 -> 7
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 7 -> 12
+05:28:48.241 [main] DEBUG - loadGraph: Processing a line: 61 -> 87
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 89 -> 30
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 30 -> 98
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 98 -> 3
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 68 -> 65
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 36 -> 44
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 44 -> 5
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 6 -> 94
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 60 -> 92
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 92 -> 102
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 92 -> 97
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 58 -> 75
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 75 -> 47
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 75 -> 94
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 75 -> 30
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 22 -> 82
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 80 -> 62
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 23 -> 100
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 100 -> 69
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 83 -> 27
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 79 -> 72
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 38 -> 60
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 38 -> 46
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 97 -> 84
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 97 -> 72
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 65 -> 4
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 4 -> 17
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 17 -> 77
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 72 -> 11
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 11 -> 46
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 11 -> 50
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 11 -> 104
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 11 -> 72
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 50 -> 25
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 53 -> 45
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 45 -> 15
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 45 -> 51
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 45 -> 80
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 77 -> 86
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 86 -> 16
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 96 -> 23
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 96 -> 47
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 13 -> 67
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 67 -> 57
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 64 -> 61
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 27 -> 13
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 71 -> 96
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 19 -> 31
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 31 -> 24
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 16 -> 71
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 3 -> 84
+05:28:48.242 [main] DEBUG - loadGraph: Processing a line: 3 -> 12
+05:28:48.243 [main] DEBUG - loadGraph: Processing a line: 63 -> 73
+05:28:48.243 [main] DEBUG - loadGraph: Processing a line: 26 -> 29
+05:28:48.243 [main] DEBUG - loadGraph: Processing a line: 26 -> 79
+05:28:48.243 [main] DEBUG - loadGraph: Processing a line: 26 -> 96
+05:28:48.244 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+05:28:48.244 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:28:48.244 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+05:28:48.253 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:28:48.253 [main] DEBUG - divideGraph: Initialized pieces: [Lscala.collection.immutable.Map;@1caa0244
+05:28:48.254 [main] DEBUG - divideGraph: Pieces after division: [Lscala.collection.immutable.Map;@1caa0244
+05:28:48.254 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+05:28:48.254 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:28:48.254 [main] DEBUG - divideGraph: Initialized pieces: [Lscala.collection.immutable.Map;@231f98ef
+05:28:48.254 [main] DEBUG - divideGraph: Pieces after division: [Lscala.collection.immutable.Map;@231f98ef
+05:28:48.254 [main] INFO  - shuffleGraph: Shuffling graph pieces...
+05:28:48.260 [main] DEBUG - shuffleGraph: Shuffled Graph: HashMap(80 -> Set(62), 28 -> Set(107, 79, 38), 45 -> Set(15, 51, 80), 98 -> Set(3), 34 -> Set(78, 30), 67 -> Set(57), 93 -> Set(26), 12 -> Set(28), 66 -> Set(29, 12, 40, 18), 89 -> Set(30), 51 -> Set(45, 88), 84 -> Set(59, 101), 8 -> Set(52, 47), 73 -> Set(85, 39, 47), 78 -> Set(9, 82, 99), 19 -> Set(31), 100 -> Set(69), 23 -> Set(100), 62 -> Set(9, 77), 4 -> Set(17), 88 -> Set(55, 8, 73), 77 -> Set(86), 40 -> Set(87), 15 -> Set(55, 2), 11 -> Set(46, 50, 104, 72), 90 -> Set(10, 63), 9 -> Set(34, 62), 44 -> Set(5), 33 -> Set(83, 10, 39), 22 -> Set(82), 56 -> Set(91, 10), 55 -> Set(93), 26 -> Set(29, 79, 96), 50 -> Set(25), 37 -> Set(85, 81), 68 -> Set(65), 61 -> Set(87), 13 -> Set(67), 46 -> Set(15, 35), 99 -> Set(58, 72), 24 -> Set(74), 94 -> Set(5), 83 -> Set(27), 35 -> Set(91, 94, 108), 16 -> Set(71), 79 -> Set(72), 5 -> Set(54), 72 -> Set(11), 10 -> Set(56), 59 -> Set(7), 87 -> Set(14), 48 -> Set(6), 21 -> Set(78), 76 -> Set(57), 54 -> Set(37, 96, 89), 43 -> Set(32), 65 -> Set(4), 71 -> Set(96), 57 -> Set(41), 32 -> Set(90), 6 -> Set(94), 36 -> Set(44), 1 -> Set(68), 39 -> Set(87, 106), 82 -> Set(20, 35), 49 -> Set(19), 17 -> Set(77), 25 -> Set(33), 60 -> Set(92), 14 -> Set(11, 42, 83, 22), 47 -> Set(43, 105), 31 -> Set(24), 95 -> Set(84, 20), 96 -> Set(23, 47), 69 -> Set(66, 21), 58 -> Set(75), 64 -> Set(61), 53 -> Set(45), 42 -> Set(53), 75 -> Set(47, 94, 30), 0 -> Set(1, 49), 20 -> Set(82, 95, 109, 48), 27 -> Set(13), 70 -> Set(35, 80, 23), 2 -> Set(51), 86 -> Set(16), 38 -> Set(60, 46), 81 -> Set(98), 92 -> Set(102, 97), 18 -> Set(2), 30 -> Set(98), 7 -> Set(12), 97 -> Set(84, 72), 29 -> Set(8), 41 -> Set(76), 63 -> Set(73), 3 -> Set(84, 12), 74 -> Set(36, 103), 91 -> Set(64), 52 -> Set(70), 85 -> Set(37, 58, 22))
+05:34:59.376 [main] INFO  - Main: Starting the program
+05:34:59.377 [main] INFO  - Main: Loading the configuration file
+05:34:59.377 [main] INFO  - Main: Loading the original graph
+05:34:59.399 [main] INFO  - Main: Loading the perturbed graph
+05:34:59.400 [main] INFO  - Main: Loading the shard folder
+05:34:59.400 [main] INFO  - Main: Dividing the original graph into pieces
+05:34:59.453 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:34:59.457 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:34:59.460 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:34:59.483 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+05:34:59.483 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+05:34:59.483 [main] INFO  - Main: Dividing the perturbed graph into pieces
+05:34:59.483 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:34:59.483 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:34:59.483 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:34:59.485 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+05:34:59.485 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+05:34:59.485 [main] INFO  - Main: Assigning 3 pieces to each graph
+05:34:59.485 [main] INFO  - Main: Dividing the original graph into 3 pieces
+05:34:59.486 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+05:34:59.495 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:34:59.496 [main] INFO  - divideGraph: Pieces have been generated successfully.
+05:34:59.496 [main] INFO  - Main: Dividing the perturbed graph into 3 pieces
+05:34:59.496 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+05:34:59.496 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+05:34:59.496 [main] INFO  - divideGraph: Pieces have been generated successfully.
+05:34:59.496 [main] INFO  - Main: Shuffling the original graph
+05:34:59.496 [main] INFO  - shuffleGraph: Shuffling graph pieces...
+06:22:36.360 [main] INFO  - Main: Starting the program
+06:22:36.360 [main] INFO  - Main: Loading the configuration file
+06:22:36.360 [main] INFO  - Main: Loading the original graph
+06:22:36.383 [main] INFO  - Main: Loading the perturbed graph
+06:22:36.384 [main] INFO  - Main: Loading the shard folder
+06:22:36.384 [main] INFO  - Main: Dividing the original graph into pieces
+06:22:36.436 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+06:22:36.440 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+06:22:36.443 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+06:22:36.464 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+06:22:36.464 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+06:22:36.464 [main] INFO  - Main: Dividing the perturbed graph into pieces
+06:22:36.464 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+06:22:36.464 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+06:22:36.464 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+06:22:36.466 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+06:22:36.466 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+06:22:36.466 [main] INFO  - Main: Assigning 3 pieces to each graph
+06:22:36.467 [main] INFO  - Main: Dividing the original graph into 3 pieces
+06:22:36.467 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+06:22:36.477 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+06:22:36.478 [main] INFO  - divideGraph: Pieces have been generated successfully.
+06:22:36.478 [main] INFO  - Main: Dividing the perturbed graph into 3 pieces
+06:22:36.478 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+06:22:36.478 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+06:22:36.478 [main] INFO  - divideGraph: Pieces have been generated successfully.
+06:22:36.478 [main] INFO  - Main: Shuffling the original graph
+06:22:36.478 [main] INFO  - shuffleGraph: Initiating shuffle process...
+06:22:36.482 [main] INFO  - shuffleGraph: Graph pieces shuffled successfully. Generated 9 shuffled pieces.
+20:06:55.072 [main] INFO  - Main: Starting the program
+20:06:55.073 [main] INFO  - Main: Loading the configuration file
+20:06:55.073 [main] INFO  - Main: Loading the original graph
+20:06:55.097 [main] INFO  - Main: Loading the perturbed graph
+20:06:55.097 [main] INFO  - Main: Loading the shard folder
+20:06:55.097 [main] INFO  - Main: Dividing the original graph into pieces
+20:06:55.149 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+20:06:55.154 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+20:06:55.157 [main] INFO  - loadGraph: Successfully read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+20:06:55.180 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot containing 101 nodes
+20:06:55.180 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+20:06:55.180 [main] INFO  - Main: Dividing the perturbed graph into pieces
+20:06:55.180 [main] INFO  - loadGraph: Initiating the loading process from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+20:06:55.180 [main] INFO  - loadGraph: Opening file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+20:06:55.180 [main] INFO  - loadGraph: Successfully read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+20:06:55.183 [main] INFO  - loadGraph: Successfully loaded graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot containing 96 nodes
+20:06:55.183 [main] INFO  - loadGraph: Closing the file /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+20:06:55.183 [main] INFO  - Main: Assigning 3 pieces to each graph
+20:06:55.183 [main] INFO  - Main: Dividing the original graph into 3 pieces
+20:06:55.183 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+20:06:55.192 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+20:06:55.193 [main] INFO  - divideGraph: Pieces have been generated successfully.
+20:06:55.193 [main] INFO  - Main: Dividing the perturbed graph into 3 pieces
+20:06:55.193 [main] INFO  - divideGraph: Initiating the division process into 3 pieces...
+20:06:55.193 [main] INFO  - divideGraph: Initialized 3 empty pieces.
+20:06:55.194 [main] INFO  - divideGraph: Pieces have been generated successfully.
+20:06:55.194 [main] INFO  - Main: Shuffling the original graph
+20:06:55.194 [main] INFO  - shuffleGraph: Initiating shuffle process...
+20:06:55.198 [main] INFO  - shuffleGraph: Graph pieces shuffled successfully. Generated 9 shuffled pieces.

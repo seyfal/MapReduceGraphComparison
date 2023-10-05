@@ -1,0 +1,55 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/simrank_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main 2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/Main 2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimRank.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/SimRank.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ConfigurationLoader.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/ConfigurationLoader.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimilarityMapper 2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/SimilarityMapper 2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimilarityMapper.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/SimilarityMapper.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphSharder 2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphSharder 2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphSharder 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphSharder 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimilarityMapper 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/SimilarityMapper 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimilarityMapper.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/SimilarityMapper.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphLoader$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphLoader$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ConfigurationLoader.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/ConfigurationLoader.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SimRank.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/SimRank.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/Main 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphSharder$ 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphSharder$ 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$ 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/Main$ 2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphSharder$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphSharder$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphLoader.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphLoader.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphSharder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphSharder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphSharder.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphSharder.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GraphLoader.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/GraphLoader.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ConfigurationLoader$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/seyfal/Desktop/CS441 Cloud/SimRank/SimRank/target/scala-3.3.1/classes/ConfigurationLoader$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

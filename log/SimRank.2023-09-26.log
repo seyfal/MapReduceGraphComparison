@@ -1,0 +1,155 @@
+01:26:21.815 [main] INFO  - Loading original graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:26:21.867 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:26:21.869 [main] INFO  - Read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:26:21.890 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot. It contains 101 nodes.
+01:26:21.890 [main] INFO  - Original graph loaded with 101 nodes
+01:26:21.890 [main] INFO  - Loading perturbed graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:26:21.890 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:26:21.890 [main] INFO  - Read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:26:21.892 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot. It contains 96 nodes.
+01:26:21.892 [main] INFO  - Perturbed graph loaded with 96 nodes
+01:26:21.894 [main] INFO  - Sharding original graph into /Users/seyfal/Desktop/CS441 Cloud/shards
+01:42:38.900 [main] INFO  - Loading original graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:42:38.950 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:42:38.952 [main] INFO  - Read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:42:38.974 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot. It contains 101 nodes.
+01:42:38.974 [main] INFO  - Original graph loaded with 101 nodes
+01:42:38.974 [main] INFO  - Loading perturbed graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:42:38.974 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:42:38.974 [main] INFO  - Read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:42:38.976 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot. It contains 96 nodes.
+01:42:38.976 [main] INFO  - Perturbed graph loaded with 96 nodes
+01:47:21.876 [main] INFO  - Loading original graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:47:21.922 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:47:21.924 [main] INFO  - Read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:47:21.945 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot. It contains 101 nodes.
+01:47:21.945 [main] INFO  - Original graph loaded with 101 nodes
+01:47:21.945 [main] INFO  - Loading perturbed graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:47:21.945 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:47:21.945 [main] INFO  - Read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:47:21.947 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot. It contains 96 nodes.
+01:47:21.947 [main] INFO  - Perturbed graph loaded with 96 nodes
+01:47:21.949 [main] INFO  - Sharding the original graph into 10 shards
+01:48:47.233 [main] INFO  - Loading original graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:48:47.282 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:48:47.285 [main] INFO  - Read 153 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot
+01:48:47.306 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.dot. It contains 101 nodes.
+01:48:47.306 [main] INFO  - Original graph loaded with 101 nodes
+01:48:47.306 [main] INFO  - Loading perturbed graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:48:47.307 [main] INFO  - Attempting to load graph from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:48:47.307 [main] INFO  - Read 157 lines from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot
+01:48:47.309 [main] INFO  - Graph loaded successfully from /Users/seyfal/Desktop/CS441 Cloud/Project 1NetGraph_25-09-23-01-46-17.ngs.perturbed.dot. It contains 96 nodes.
+01:48:47.309 [main] INFO  - Perturbed graph loaded with 96 nodes
+01:48:47.312 [main] INFO  - Sharding the original graph into 10 shards
+01:48:47.324 [main] INFO  - Printing out the sharded graphs
+01:48:47.325 [main] INFO  - Shard 1:
+01:48:47.325 [main] INFO  - 22 -> 82
+01:48:47.325 [main] INFO  - 68 -> 65
+01:48:47.325 [main] INFO  - 13 -> 67
+01:48:47.325 [main] INFO  - 59 -> 7
+01:48:47.325 [main] INFO  - 77 -> 86
+01:48:47.325 [main] INFO  - 40 -> 87
+01:48:47.325 [main] INFO  - 31 -> 24
+01:48:47.325 [main] INFO  - 95 -> 84, 20
+01:48:47.325 [main] INFO  - 2 -> 51
+01:48:47.326 [main] INFO  - 86 -> 16
+01:48:47.326 [main] INFO  - Shard 2:
+01:48:47.326 [main] INFO  - 78 -> 9, 82, 99
+01:48:47.326 [main] INFO  - 23 -> 100
+01:48:47.326 [main] INFO  - 50 -> 25
+01:48:47.326 [main] INFO  - 87 -> 14
+01:48:47.326 [main] INFO  - 32 -> 90
+01:48:47.326 [main] INFO  - 14 -> 11, 42, 83, 22
+01:48:47.326 [main] INFO  - 41 -> 76
+01:48:47.326 [main] INFO  - 3 -> 84, 12
+01:48:47.326 [main] INFO  - 96 -> 23, 47
+01:48:47.326 [main] INFO  - 69 -> 66, 21
+01:48:47.326 [main] INFO  - Shard 3:
+01:48:47.326 [main] INFO  - 51 -> 45, 88
+01:48:47.326 [main] INFO  - 15 -> 55, 2
+01:48:47.326 [main] INFO  - 33 -> 83, 10, 39
+01:48:47.326 [main] INFO  - 24 -> 74
+01:48:47.326 [main] INFO  - 79 -> 72
+01:48:47.326 [main] INFO  - 60 -> 92
+01:48:47.326 [main] INFO  - 42 -> 53
+01:48:47.326 [main] INFO  - 97 -> 84, 72
+01:48:47.326 [main] INFO  - 4 -> 17
+01:48:47.326 [main] INFO  - 88 -> 55, 8, 73
+01:48:47.326 [main] INFO  - Shard 4:
+01:48:47.326 [main] INFO  - 89 -> 30
+01:48:47.326 [main] INFO  - 61 -> 87
+01:48:47.326 [main] INFO  - 16 -> 71
+01:48:47.326 [main] INFO  - 5 -> 54
+01:48:47.326 [main] INFO  - 43 -> 32
+01:48:47.326 [main] INFO  - 25 -> 33
+01:48:47.326 [main] INFO  - 70 -> 35, 80, 23
+01:48:47.326 [main] INFO  - 52 -> 70
+01:48:47.326 [main] INFO  - 98 -> 3
+01:48:47.326 [main] INFO  - 34 -> 78, 30
+01:48:47.326 [main] INFO  - Shard 5:
+01:48:47.327 [main] INFO  - 62 -> 9, 77
+01:48:47.327 [main] INFO  - 44 -> 5
+01:48:47.327 [main] INFO  - 26 -> 29, 79, 96
+01:48:47.327 [main] INFO  - 99 -> 58, 72
+01:48:47.327 [main] INFO  - 35 -> 91, 94
+01:48:47.327 [main] INFO  - 71 -> 96
+01:48:47.327 [main] INFO  - 80 -> 62
+01:48:47.327 [main] INFO  - 6 -> 94
+01:48:47.327 [main] INFO  - 17 -> 77
+01:48:47.327 [main] INFO  - 53 -> 45
+01:48:47.327 [main] INFO  - Shard 6:
+01:48:47.327 [main] INFO  - 45 -> 15, 80
+01:48:47.327 [main] INFO  - 100 -> 69
+01:48:47.327 [main] INFO  - 90 -> 10, 63
+01:48:47.327 [main] INFO  - 72 -> 11
+01:48:47.327 [main] INFO  - 54 -> 37, 96, 89
+01:48:47.327 [main] INFO  - 36 -> 44
+01:48:47.327 [main] INFO  - 27 -> 13
+01:48:47.327 [main] INFO  - 81 -> 98
+01:48:47.327 [main] INFO  - 18 -> 2
+01:48:47.327 [main] INFO  - 7 -> 12
+01:48:47.327 [main] INFO  - 63 -> 73
+01:48:47.327 [main] INFO  - Shard 7:
+01:48:47.327 [main] INFO  - 19 -> 31
+01:48:47.327 [main] INFO  - 55 -> 93
+01:48:47.327 [main] INFO  - 37 -> 85, 81
+01:48:47.327 [main] INFO  - 46 -> 15, 35
+01:48:47.327 [main] INFO  - 82 -> 20, 35
+01:48:47.327 [main] INFO  - 64 -> 61
+01:48:47.327 [main] INFO  - 91 -> 64
+01:48:47.327 [main] INFO  - 28 -> 79, 38
+01:48:47.327 [main] INFO  - 8 -> 52, 47
+01:48:47.327 [main] INFO  - 73 -> 85, 39, 47
+01:48:47.327 [main] INFO  - Shard 8:
+01:48:47.328 [main] INFO  - 9 -> 34
+01:48:47.328 [main] INFO  - 56 -> 91, 10
+01:48:47.328 [main] INFO  - 83 -> 27
+01:48:47.328 [main] INFO  - 10 -> 56
+01:48:47.328 [main] INFO  - 65 -> 4
+01:48:47.328 [main] INFO  - 47 -> 43
+01:48:47.328 [main] INFO  - 38 -> 60, 46
+01:48:47.328 [main] INFO  - 92 -> 97
+01:48:47.328 [main] INFO  - 29 -> 8
+01:48:47.328 [main] INFO  - 74 -> 36
+01:48:47.328 [main] INFO  - Shard 9:
+01:48:47.328 [main] INFO  - 93 -> 26
+01:48:47.328 [main] INFO  - 66 -> 29, 12, 40, 18
+01:48:47.328 [main] INFO  - 84 -> 59
+01:48:47.328 [main] INFO  - 11 -> 72, 46, 50
+01:48:47.328 [main] INFO  - 48 -> 6
+01:48:47.328 [main] INFO  - 57 -> 41
+01:48:47.328 [main] INFO  - 39 -> 87
+01:48:47.328 [main] INFO  - 75 -> 47, 94, 30
+01:48:47.328 [main] INFO  - 0 -> 1, 49
+01:48:47.328 [main] INFO  - 20 -> 82, 95, 48
+01:48:47.328 [main] INFO  - Shard 10:
+01:48:47.328 [main] INFO  - 67 -> 57
+01:48:47.328 [main] INFO  - 12 -> 28
+01:48:47.328 [main] INFO  - 94 -> 5
+01:48:47.328 [main] INFO  - 58 -> 75
+01:48:47.328 [main] INFO  - 30 -> 98
+01:48:47.328 [main] INFO  - 85 -> 58, 22
+01:48:47.328 [main] INFO  - 21 -> 78
+01:48:47.328 [main] INFO  - 76 -> 57
+01:48:47.328 [main] INFO  - 49 -> 19
+01:48:47.328 [main] INFO  - 1 -> 68
