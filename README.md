@@ -97,7 +97,7 @@ Here is the sample output you can expect after running the application:
 
 ## Video and Further Documentation
 
-For a detailed walkthrough, watch our [demo video](<Link-To-Video>). In Depth documentation is on the way. 
+For a detailed walkthrough, watch our [demo video](https://vimeo.com/873263825?share=copy#t=0). In Depth documentation is on the way. 
 
 ## Limitations
 
