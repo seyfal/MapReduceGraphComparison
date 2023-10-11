@@ -1,3 +1,8 @@
+##Seyfal Sultanov
+##NetID: ssulta24
+##UIC Email: ssulta24@uic.edu
+##UIN: 678686497
+
 # SimRank Project Documentation
 
 ## Overview
