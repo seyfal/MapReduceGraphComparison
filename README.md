@@ -1,12 +1,65 @@
-## Seyfal Sultanov
-## NetID: ssulta24
-## UIC Email: ssulta24@uic.edu
-## UIN: 678686497
+## My Submission: 
+1. **Seyfal Sultanov**
+2. **NetID: ssulta24**
+3. **UIC Email: ssulta24@uic.edu**
+4. **UIN: 678686497**
 
-# SimRank Project Documentation
+# Distributed Graph Matching: Code Documentation
 
-## Overview
-SimRank is a sophisticated Scala project aimed to perform similarity rankings on data sets. The project's primary goal is to calculate similarities between different data points in a dataset and rank them accordingly.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [System Architecture](#system-architecture)
+3. [Code Logic and Flow](#code-logic-and-flow)
+   - [Initialization](#initialization)
+   - [Data Loading](#data-loading)
+   - [Pre-processing](#pre-processing)
+   - [Distributed Matching](#distributed-matching)
+   - [Post-processing](#post-processing)
+   - [Result Compilation](#result-compilation)
+4. [Generated Statistics](#generated-statistics)
+   - [Overview](#overview)
+   - [Matching Metrics](#matching-metrics)
+   - [Performance Metrics](#performance-metrics)
+   - [Error Metrics](#error-metrics)
+   - [Visualization Tools](#visualization-tools)
+5. [Areas of Improvement](#areas-of-improvement)
+   - [Code Optimization](#code-optimization)
+   - [Statistical Methods](#statistical-methods)
+   - [Cloud Integration](#cloud-integration)
+   - [User Experience](#user-experience)
+6. [Known Bugs and Issues](#known-bugs-and-issues)
+7. [FAQs](#faqs)
+8. [Appendices](#appendices)
+   - [Code Listings](#code-listings)
+   - [References and Citations](#references-and-citations)
+9. [Contact and Support](#contact-and-support)
+
+## Introduction
+The primary objective of this project is to leverage cloud-based frameworks and distributed computing technologies to analyze large-scale graph matching challenges. Using the [network simulator, NetGraphSim](https://github.com/0x1DOCD00D/NetGameSim), we generate expansive graphs representative of big data. These graphs undergo specialized perturbation operations to produce their modified counterparts. The key challenge lies in discerning the differences between the original and perturbed graphs. 
+
+This project not only aims to determine these differences but also seeks to quantify the matching accuracy through statistically robust methods. Our results not only offer a holistic matching score for the graphs but also provide insights into how closely individual nodes and edges correlate. While the graph isomorphism problem is NP-complete, our approximation algorithms attempt to solve real-world challenges by comparing nodes and edges, producing meaningful metrics to gauge similarity.
+
+## System Architecture
+
+### Tools & Libraries:
+- **NetGraphSim:** An open-source [network graph simulation platform](https://github.com/0x1DOCD00D/NetGameSim) written in Scala. It serves as the backbone for generating original and perturbed graph data for our project.
+  
+- **Logging and Configuration Management:** Leveraging [Logback](https://logback.qos.ch/) and [SLFL4J](https://www.slf4j.org/) for logging, we maintain extensive logs across different logging levels (TRACE, INFO, WARN, ERROR). Configuration variables and parameters are supplied via [Typesafe Configuration Library](https://github.com/lightbend/config).
+
+- **Distributed Processing Framework:** We harness the power of [Apache Hadoop](http://hadoop.apache.org/) to handle distributed processing. Hadoop's MapReduce paradigm plays a pivotal role in our graph analysis, especially when working with extensive data sets.
+
+- **Cloud Deployment:** Post local testing and validation, our MapReduce programs are deployed on Amazon Elastic MapReduce (EMR) to exploit the elasticity and scalability of cloud computing.
+
+### High-Level Flow:
+1. **Graph Generation:** Leveraging NetGraphSim to produce expansive graph pairs. The graph pairs consist of an original and its perturbed counterpart.
+2. **Perturbation Analysis:** Apply perturbation operators to the original graph, producing a modified graph with nuanced differences.
+3. **Distributed Graph Matching:** Employ Hadoop's MapReduce functionality to analyze differences between graph pairs. Mappers and reducers are custom-designed for this purpose.
+4. **Result Compilation:** Post-processing the distributed task outputs to compile, validate, and present a coherent result for further analysis.
+
+
+--------------------------------------------------------------------------
+
+
 
 ## Prerequisites
 
