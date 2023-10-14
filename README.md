@@ -225,7 +225,7 @@ Steps:
 1. **Local Subgraph Extraction**: For both nodes, their respective local subgraphs up to a specified depth are extracted using `extractLocalSubgraph`.
 2. **Jaccard Similarity Computation**: The Jaccard similarity between the two subgraphs is computed using the formula:
 
-\[ \text{Similarity} = \frac{|\text{intersection of nodes}|}{|\text{union of nodes}|} \]
+$$ Similarity = {intersection-of-nodes \over union-of-nodes}$$
 
 #### Output Format
 
@@ -234,7 +234,59 @@ The output data is written in a `<key, value>` format where:
 - **Key**: The pair of nodes being compared, e.g., `<node1, node2>`
 - **Value**: The Jaccard similarity score.
 
-#### Questions for Documentation:
+## 3. Code Logic and Flow
+
+### Post-processing
+
+After the MapReduce operation has completed its job, it is crucial to process the generated data to gain actionable insights. The post-processing phase consists of:
+
+1. **Output Retrieval**: The first step is to fetch the output of the MapReduce job. This is done using the `loadOutputFile` function, which fetches the data from HDFS. The results are loaded into a map structure which has node pairs as keys and similarity scores as values. This map provides insights about the similarity between nodes from two different versions of the graph.
+
+2. **Node Analysis**: Next, we extract various subsets of nodes from the output:
+   - Same Nodes: These are nodes that remained unchanged between the two versions.
+   - Modified Nodes: Nodes that have undergone changes.
+   
+   The above subsets are derived based on the similarity scores. A score of `1.0` indicates that the nodes are the same, while scores less than `1.0` indicate modifications.
+
+3. **Performance Benchmarks**: 
+   - Traceability links (TL) are calculated, including:
+     - Good Traceability Links (GTL): Correct matches identified by the algorithm.
+     - Bad Traceability Links (BTL): Errors in the algorithm's matching.
+
+   Detailed metrics like `ACC`, `VPR`, and `BTLR` are computed. These metrics give insights into the accuracy, precision, and error rate of the algorithm.
+
+### Result Compilation
+
+Once post-processing is complete, the program provides the final statistics. These results are crucial for understanding how the algorithm performed. This phase includes:
+
+1. **Printing Intermediate Statistics**: The script provides a comprehensive list of metrics such as `ATL`, `DTL`, `WTL`, `CTL`, `RTL`, `GTL`, and `BTL`. These metrics offer deep insights into the matching process.
+
+2. **Final Metrics Calculation**: Advanced metrics like `ACC`, `VPR`, and `BTLR` are computed, providing a more holistic understanding of the algorithm's performance.
+
+3. **Results Explanation**: The `explainResults` function gives a user-friendly explanation of the metrics. This feature is especially useful for those unfamiliar with graph processing, as it translates complex metrics into understandable language.
+
+## 4. Generated Statistics
+
+### Overview
+
+The core purpose of the algorithm is to compare and match components between the original graph and its perturbed version. The generated statistics shed light on the algorithm's efficiency, accuracy, and areas of potential improvement.
+
+### Matching Metrics
+
+1. **Traceability Links (TL)**: Represents a match between components (nodes or edges) of the original graph and its altered version.
+2. **Good Traceability Links (GTL)**: Correct matches identified by the algorithm.
+3. **Bad Traceability Links (BTL)**: Errors in the algorithm's matching.
+
+### Performance Metrics
+
+1. **Accuracy (ACC)**: Fraction of matches the algorithm correctly identified.
+2. **Validation Precision Rate (VPR)**: Reflects the quality of matches.
+3. **Bad Traceability Links Rate (BTLR)**: Fraction of total matches that were errors.
+
+### Error Metrics
+
+1. **Wrong Traceability Links (WTL)**: Represents mismatches made by the algorithm.
+
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
