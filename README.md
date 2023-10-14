@@ -74,7 +74,7 @@ Once the configuration is loaded, the Hadoop FileSystem instance is fetched usin
 
 #### Data Format (for Config file):
 
-```
+```conf
 app {
 
   debug = false // set to True to execute in debug mode with more data and logger statements
