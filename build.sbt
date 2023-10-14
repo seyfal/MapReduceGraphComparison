@@ -1,7 +1,7 @@
 import sbt.Keys.libraryDependencies
 
 // Define the version of your project.
-ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / version := "0.1.0"
 
 // Define the Scala version to be used.
 ThisBuild / scalaVersion := "3.3.1"
