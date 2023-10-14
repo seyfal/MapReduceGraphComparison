@@ -6,9 +6,6 @@
 ![Logback Version](https://img.shields.io/badge/Logback-1.4.7-yellow)
 ![SLF4J Version](https://img.shields.io/badge/SLF4J-2.0.5-lightgrey)
 ![Hadoop Client Version](https://img.shields.io/badge/Hadoop%20Client-3.3.6-blueviolet)
-![JVM Initial Heap](https://img.shields.io/badge/JVM%20Initial%20Heap-512M-green)
-![JVM Max Heap](https://img.shields.io/badge/JVM%20Max%20Heap-2G-green)
-![JVM GC](https://img.shields.io/badge/JVM%20GC-G1GC-green)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 
