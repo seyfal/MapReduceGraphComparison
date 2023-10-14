@@ -41,22 +41,147 @@ This project not only aims to determine these differences but also seeks to quan
 
 ## System Architecture
 
-### Tools & Libraries:
-- **NetGraphSim:** An open-source [network graph simulation platform](https://github.com/0x1DOCD00D/NetGameSim) written in Scala. It serves as the backbone for generating original and perturbed graph data for our project.
+### Frameworks and Libraries:
+
+The project is rooted in the Scala programming language, leveraging its functional capabilities to handle the complex logic and vast data sets intrinsic to graph analysis. Key libraries and frameworks integral to this project include:
+
+1. **NetGameSim:** An open-source [network simulator](https://github.com/0x1DOCD00D/NetGameSim) used to create and perturb expansive graphs, simulating real-world big data challenges.
+   
+2. **Logback & SLF4J:** Adopted for sophisticated logging, these tools help monitor, debug, and trace the application, ensuring transparent and efficient execution. More about [Logback](https://logback.qos.ch/) and [SLFL4J](https://www.slf4j.org/).
+
+3. **Typesafe Configuration Library:** Manages configurations, ensuring that all input parameters are seamlessly and accurately integrated into the project. Dive into the [Typesafe Configuration Library](https://github.com/lightbend/config).
+
+4. **Apache Hadoop:** At the heart of the distributed processing, [Apache Hadoop](http://hadoop.apache.org/) empowers the application to analyze massive data sets efficiently. The framework uses the map/reduce model, which splits tasks, processes them in parallel, and then aggregates the results.
+
+## Code Logic and Flow
+
+### Initialization
+
+#### Configuration Loading
+The initialization process starts with loading the application configurations from the provided `conf` file. This is managed by the `ConfigurationLoader` singleton object which is a part of the `com.lsc` package. Here are the key aspects of the configuration loading process:
+
+- The [Typesafe Config library](https://github.com/lightbend/config) is used to load the configurations. The configuration structure enables a distinction between running the application in local vs. cloud, and in debug vs. release modes.
   
-- **Logging and Configuration Management:** Leveraging [Logback](https://logback.qos.ch/) and [SLFL4J](https://www.slf4j.org/) for logging, we maintain extensive logs across different logging levels (TRACE, INFO, WARN, ERROR). Configuration variables and parameters are supplied via [Typesafe Configuration Library](https://github.com/lightbend/config).
+- The application first checks if it's being run on AWS and if so, on AWS EMR. This is done by attempting to connect to specific AWS metadata endpoints. If these checks are successful, the application sets its environment to "cloud"; otherwise, it defaults to "local".
 
-- **Distributed Processing Framework:** We harness the power of [Apache Hadoop](http://hadoop.apache.org/) to handle distributed processing. Hadoop's MapReduce paradigm plays a pivotal role in our graph analysis, especially when working with extensive data sets.
+- After determining the environment, the appropriate file paths and settings are loaded. For instance, when running locally in debug mode, the paths under `app.local.debug` are used, but if the environment is detected as the cloud, the paths under `app.cloud` are utilized.
 
-- **Cloud Deployment:** Post local testing and validation, our MapReduce programs are deployed on Amazon Elastic MapReduce (EMR) to exploit the elasticity and scalability of cloud computing.
+- The Hadoop and HDFS configurations are loaded based on the specified paths in the `conf` file. 
 
-### High-Level Flow:
-1. **Graph Generation:** Leveraging NetGraphSim to produce expansive graph pairs. The graph pairs consist of an original and its perturbed counterpart.
-2. **Perturbation Analysis:** Apply perturbation operators to the original graph, producing a modified graph with nuanced differences.
-3. **Distributed Graph Matching:** Employ Hadoop's MapReduce functionality to analyze differences between graph pairs. Mappers and reducers are custom-designed for this purpose.
-4. **Result Compilation:** Post-processing the distributed task outputs to compile, validate, and present a coherent result for further analysis.
+#### Hadoop Initialization
+Once the configuration is loaded, the Hadoop FileSystem instance is fetched using the `getFileSystem` method from the ConfigurationLoader. The Hadoop configuration (`hadoopConf`) adds the specified paths from the `core-site.xml` and `hdfs-site.xml` files and sets the default filesystem.
+
+Alright, I've taken a look at your main function and related methods. I will provide a detailed description of the data loading process, which is the initial step before other operations. 
+
+#### Data Format (for Config file):
+
+```
+app {
+
+  debug = false // set to True to execute in debug mode with more data and logger statements
+
+  common {
+    numPieces = 2 // number of pieces you want to divide the graph into, will directly affect number of shards, numShards = numPieces^2 
+    similarityThreshold = 0.95 // threshold of similarity that mapper will accept to pass data to the reducer
+    similarityDepth = 3 // how many neighbours deep you want to analyze the similarity 
+  }
+
+  local {
+    release {
+      originalGraphFilePath = "path to originalGraph release version on your local machine"
+      perturbedGraphFilePath = "path to perturbedGraph release version on your local machine"
+      yamlFilePath = "path to goldenSet release version on your local machine"
+    }
+    debug {
+      originalGraphFilePath = "path to originalGraph debug version on your local machine"
+      perturbedGraphFilePath = "path to perturbedGraph debug version on your local machine"
+      yamlFilePath = "path to goldenSet debug version on your local machine"
+    }
+  }
+
+  cloud {
+    originalGraphFilePath = "s3://path to originalGraph"
+    perturbedGraphFilePath = "s3://path to perturbedGraph"
+    yamlFilePath = "s3://path to the goldenSet"
+  }
+}
+
+hadoop {
+  coreSitePath = "/Users/{your user name}/hadoop-{your hadoop version}/etc/hadoop/core-site.xml" 
+  hdfsSitePath = "/Users/{your user name}/hadoop-{your hadoop version}/etc/hadoop/hdfs-site.xml"
+  // or if you are running in the cloud:
+  coreSitePath = "/etc/hadoop/conf/core-site.xml"
+  hdfsSitePath = "/etc/hadoop/conf/hdfs-site.xml" 
+}
+
+hdfs {
+  userDirectory = "base directory where your files reside"
+  originalGraphPath = "path to originalGraph.txt"
+  perturbedGraphPath = "path to perturbedGraph.txt" 
+  hdfsBase = "hdfs://localhost:9000" // if running on local host, otherwise not needed in the cloud. 
+}
+
+job {
+    jarPath = "path to jar file, normally in your target/scala{version}/ folder"
+}
+```
+
+### Data Loading and Pre-processing
+
+The application is designed to handle and process graph data. The graph is expected to be in the Graphviz `.dot` format, which presents data as an adjacency list. Once the graph is loaded into the application, it undergoes various processes like dividing, shuffling, and storing into the Hadoop Distributed File System (HDFS).
+
+#### Step-by-Step Breakdown:
+
+2. **Loading the Graph:**
+   - The graph in `.dot` format is read from the specified file path. The `loadGraph` method is responsible for this.
+   - The graph is loaded line by line. Each line represents a node and its edges.
+   - If any errors occur during this process (like the file not being found, or IO errors), the application logs the error and returns an empty graph.
+   
+3. **Dividing the Graph:**
+   - The loaded graph is then divided into multiple pieces using the `divideGraph` method.
+   - The number of pieces to divide into is determined by the configurations loaded earlier.
+   - Each node is assigned to a piece based on its hash code. This ensures an even distribution of nodes across pieces.
+   
+4. **Shuffling the Graph:**
+   - Once divided, the pieces of the original graph are shuffled with the pieces of the perturbed graph using the `shuffleGraph` method.
+   - The method combines each piece of the original graph with every piece of the perturbed graph. 
+   - The `combineGraphs` method merges two graphs, ensuring no node overlaps and retaining all edges.
+   
+5. **Storing in HDFS:**
+   - After shuffling, the resultant shards of the graph are written to HDFS using the `writeShardsToHDFS_nodes` method.
+   - Each shard is written as a CSV, with mappings between nodes of the original and perturbed graphs.
+   - Alongside the shards, the original and perturbed graphs themselves are also stored in HDFS as cache files using the `storeGraphInHDFS` method.
+   - The graph is serialized into a string format using the `serializeGraph` method before storing in HDFS.
+   
+#### Data Format:
+
+The graph is imported as an adjacency list in the `.dot` format. Here's a simplified example of the input:
+
+```plaintext
+digraph "Net Graph with 101 nodes" {
+"5" -> "54" ["weight"="6.0"]
+"54" -> "37" ["weight"="1.0"]
+...
+}
+```
+
+When the graph is loaded and processed, it is translated into a map of nodes and their corresponding edges, making it more manageable and easy to operate on.
+
+#### Error Handling:
+
+Throughout the data loading and preprocessing stages, there are various checkpoints to ensure error handling:
+
+- If there's an error in reading the file or parsing its content, appropriate error messages are logged.
+- IOExceptions, particularly when dealing with HDFS operations, are caught and logged.
+- Any unexpected error is also caught and logged, ensuring that the application doesn't crash abruptly.
 
 
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
 
