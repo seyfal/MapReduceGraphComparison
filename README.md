@@ -27,9 +27,7 @@
 7. [Areas of Improvement](#areas-of-improvement)
 8. [Known Bugs and Issues](#known-bugs-and-issues)
 9. [FAQs](#faqs)
-10. [Appendices](#appendices)
-   - [Code Listings](#code-listings)
-   - [References and Citations](#references-and-citations)
+10. [References and Citations](#references-and-citations)
 
 
 ## Introduction
@@ -40,22 +38,22 @@ This project not only aims to determine these differences but also seeks to quan
 ## Quick Setup Guide
 1. **Clone the Repository:** 
    ```
-   git clone https://github.com/0x1DOCD00D/CS441_Fall2023.git
+   git clone https://github.com/seyfal/MapReduceGraphComparison.git
    ```
 
 2. **Navigate to Project Directory:**
    ```
-   cd CS441_Fall2023
+   cd MapReduceGraphComparison
    ```
 
 3. **Install Dependencies:** 
    Make sure you have SBT (Scala Build Tool) installed.
    ```
-   sbt compile
+   sbt clean compile
    ```
 
 4. **Configure HDFS Settings:**
-   Modify the `hdfs.conf` file to point to your HDFS installation and directory structures.
+   Modify the `application.conf` file to point to your HDFS installation and directory structures.
 
 5. **Run the Application:** 
    Use SBT's run command. Adjust parameters as needed.
@@ -365,9 +363,7 @@ Direct support for `.ngs` files will allow users to easily integrate with the Ne
 
 - **Limited File Support:** The system doesn't support `.ngs` files from NetGameSim directly. A converter or direct parser needs to be implemented to bridge this gap.
 
-## Appendices
-
-### References and Citations
+## References and Citations
 - **NetGameSim Project:** Owned by Professor Mark Grechanik, this project provides the foundational simulation structures and tools. [Link](https://github.com/0x1DOCD00D/NetGameSim)
   
 - **CS441_Fall2023 Homework Assignment:** The main task description and requirements that led to this project. [Link](https://github.com/0x1DOCD00D/CS441_Fall2023)
