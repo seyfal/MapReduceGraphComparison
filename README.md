@@ -1,4 +1,16 @@
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Scala Version](https://img.shields.io/badge/Scala-3.2.2-red)
+![ScalaTest Version](https://img.shields.io/badge/ScalaTest-3.2.15-orange)
+![Typesafe Config Version](https://img.shields.io/badge/Typesafe%20Config-1.4.2-brightgreen)
+![Logback Version](https://img.shields.io/badge/Logback-1.4.7-yellow)
+![SLF4J Version](https://img.shields.io/badge/SLF4J-2.0.5-lightgrey)
+![Hadoop Client Version](https://img.shields.io/badge/Hadoop%20Client-3.3.6-blueviolet)
+![JVM Initial Heap](https://img.shields.io/badge/JVM%20Initial%20Heap-512M-green)
+![JVM Max Heap](https://img.shields.io/badge/JVM%20Max%20Heap-2G-green)
+![JVM GC](https://img.shields.io/badge/JVM%20GC-G1GC-green)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 
 ## My Submission: 
 1. **Seyfal Sultanov**
