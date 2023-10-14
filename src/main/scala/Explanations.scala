@@ -17,7 +17,6 @@ object Explanations {
     println("\n4. **To Summarize**")
     println("   Our program has been designed to intelligently match components between two versions of a graph. The metrics provided offer insight into its accuracy and precision, ensuring you can trust and act on the results it provides.")
 
-    println("\nThank you for trusting our solution. We continually strive for accuracy and excellence in graph processing!\n")
-    println("---- End of Explanation ----")
+    println("\n---- End of Explanation ----")
   }
 }
