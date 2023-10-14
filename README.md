@@ -26,14 +26,13 @@
    - [Error Metrics](#error-metrics)
 7. [Areas of Improvement](#areas-of-improvement)
 8. [Known Bugs and Issues](#known-bugs-and-issues)
-9. [FAQs](#faqs)
-10. [References and Citations](#references-and-citations)
+9. [References and Citations](#references-and-citations)
 
 
 ## Introduction
-The primary objective of this project is to leverage cloud-based frameworks and distributed computing technologies to analyze large-scale graph matching challenges. Using the [network simulator, NetGraphSim](https://github.com/0x1DOCD00D/NetGameSim), we generate expansive graphs representative of big data. These graphs undergo specialized perturbation operations to produce their modified counterparts. The key challenge lies in discerning the differences between the original and perturbed graphs. 
+The primary objective of this project is to leverage cloud-based frameworks and distributed computing technologies to analyze large-scale graph matching challenges. Using the [network simulator, NetGraphSim](https://github.com/0x1DOCD00D/NetGameSim), the application generates expansive graphs representative of big data. These graphs undergo specialized perturbation operations to produce their modified counterparts. The key challenge lies in discerning the differences between the original and perturbed graphs. 
 
-This project not only aims to determine these differences but also seeks to quantify the matching accuracy through statistically robust methods. Our results not only offer a holistic matching score for the graphs but also provide insights into how closely individual nodes and edges correlate. While the graph isomorphism problem is NP-complete, our approximation algorithms attempt to solve real-world challenges by comparing nodes and edges, producing meaningful metrics to gauge similarity.
+This project not only aims to determine these differences but also seeks to quantify the matching accuracy through statistically robust methods. The results not only offer a holistic matching score for the graphs but also provide insights into how closely individual nodes and edges correlate. While the graph isomorphism problem is NP-complete, the approximation algorithms attempt to solve real-world challenges by comparing nodes and edges, producing meaningful metrics to gauge similarity.
 
 ## Quick Setup Guide
 1. **Clone the Repository:** 
@@ -341,27 +340,28 @@ The core purpose of the algorithm is to compare and match components between the
 
 ## Areas of Improvement
 ### 1. Algorithm Robustness
-Our current implementation provides a decent starting point for graph comparison and matching, but there's room for more complex and accurate algorithms. Exploring state-of-the-art methodologies can improve both accuracy and efficiency, catering to a broader range of use cases.
+Current implementation provides a decent starting point for graph comparison and matching, but there's room for more complex and accurate algorithms. Exploring state-of-the-art methodologies can improve both accuracy and efficiency, catering to a broader range of use cases.
 
 ### 2. Advanced Data Storage in HDFS
 With growing data sizes, there's a need to reconsider our current storage strategy in HDFS. Here are some ideas to explore:
 
-- **Partitioned Storage:** By breaking the graph data into smaller partitions or blocks, we can optimize read/write speeds and also ensure data redundancy.
+- **Partitioned Storage:** By breaking the graph data into smaller partitions or blocks, there is a way to optimize read/write speeds and also ensure data redundancy.
   
-- **Compression:** Employing compression techniques can reduce the storage space and potentially speed up data transfer times. We'll have to ensure, however, that the compression and decompression overhead doesn't outweigh the benefits.
+- **Compression:** Employing compression techniques can reduce the storage space and potentially speed up data transfer times. 
   
 - **Hybrid Cloud-Local Storage:** As mentioned, a system where both cloud and local storage solutions coexist can be invaluable. The goal would be to store frequently accessed or crucial data locally and push less critical or bulky data to the cloud.
 
 ### 3. Unified Version for Cloud and Local 
-Our application is currently split into separate versions for local and cloud environments. A unified version, capable of recognizing and adapting to its runtime environment, would streamline the deployment process and reduce maintenance efforts.
+Application is currently split into separate versions for local and cloud environments. A unified version, capable of recognizing and adapting to its runtime environment, would streamline the deployment process and reduce maintenance efforts.
 
 ### 4. Support for .ngs Files from NetGameSim
 Direct support for `.ngs` files will allow users to easily integrate with the NetGameSim system, bypassing manual conversions or extractions. This would involve building a dedicated parser for these files and ensuring compatibility with our existing structures.
 
 ## Known Bugs and Issues
-- **Dual Versions:** As highlighted above, we currently lack a singular version running both on cloud and locally. The bifurcation may lead to inconsistencies in results or performance.
+- **Dual Versions:** As highlighted above, the project lacks a singular version running both on cloud and locally.
 
 - **Limited File Support:** The system doesn't support `.ngs` files from NetGameSim directly. A converter or direct parser needs to be implemented to bridge this gap.
+
 
 ## References and Citations
 - **NetGameSim Project:** Owned by Professor Mark Grechanik, this project provides the foundational simulation structures and tools. [Link](https://github.com/0x1DOCD00D/NetGameSim)
