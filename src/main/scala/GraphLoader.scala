@@ -1,5 +1,6 @@
-import org.slf4j.LoggerFactory
+package com.lsc
 
+import org.slf4j.LoggerFactory
 import scala.io.Source
 import scala.util.matching.Regex
 import java.io.{FileNotFoundException, IOException}
@@ -8,7 +9,7 @@ object GraphLoader {
   private val logger = LoggerFactory.getLogger(this.getClass)
   private type Node = Int
   private type Graph = Map[Node, Set[Node]]
-  private val nodeEdgePattern: Regex = """\"(\d+)\"\s->\s\"(\d+)\"""".r
+  private val nodeEdgePattern: Regex = """"(\d+)"\s->\s"(\d+)"""".r
 
   def loadGraph(filePath: String): Graph = {
 
@@ -51,5 +52,4 @@ object GraphLoader {
       source.close()
     }
   }
-  
 }
