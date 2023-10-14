@@ -1,3 +1,5 @@
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
+
 ## My Submission: 
 1. **Seyfal Sultanov**
 2. **NetID: ssulta24**
@@ -11,8 +13,7 @@
 2. [System Architecture](#system-architecture)
 3. [Code Logic and Flow](#code-logic-and-flow)
    - [Initialization](#initialization)
-   - [Data Loading](#data-loading)
-   - [Pre-processing](#pre-processing)
+   - [Data Loading and Pre-processing](#data-loading-and-pre-processing)
    - [Distributed Matching](#distributed-matching)
    - [Post-processing](#post-processing)
    - [Result Compilation](#result-compilation)
@@ -70,8 +71,6 @@ The initialization process starts with loading the application configurations fr
 
 #### Hadoop Initialization
 Once the configuration is loaded, the Hadoop FileSystem instance is fetched using the `getFileSystem` method from the ConfigurationLoader. The Hadoop configuration (`hadoopConf`) adds the specified paths from the `core-site.xml` and `hdfs-site.xml` files and sets the default filesystem.
-
-Alright, I've taken a look at your main function and related methods. I will provide a detailed description of the data loading process, which is the initial step before other operations. 
 
 #### Data Format (for Config file):
 
@@ -175,7 +174,47 @@ Throughout the data loading and preprocessing stages, there are various checkpoi
 - IOExceptions, particularly when dealing with HDFS operations, are caught and logged.
 - Any unexpected error is also caught and logged, ensuring that the application doesn't crash abruptly.
 
+### Distributed Matching
+Distributed matching is the core operation of the given application. It involves matching nodes or entities across two graphs to determine their similarity scores. By using a distributed system, the process efficiently scales to handle vast amounts of data by distributing the computational task among multiple machines. In this section, we'll discuss the primary components involved in the distributed matching process.
 
+#### Mapper and Reducer
+
+Before diving into the detailed logic of the MapReduce process, it's crucial to understand the purpose of the mapper and reducer classes in the context of distributed computing:
+
+1. **Mapper**: The primary goal of the mapper is to process input data and produce intermediate data. The mapper typically processes data line by line and outputs key-value pairs.
+
+2. **Reducer**: The reducer class aggregates the intermediate data produced by the mapper. The framework groups the intermediate data by key and sends it to the respective reducer. The reducer then processes this data to produce the final output.
+
+##### SimilarityMapper
+
+The `SimilarityMapper` class is the application's mapper that processes the input graphs and outputs key-value pairs to identify potential matches. Without the full code, we can only infer that the `SimilarityMapper` processes nodes or edges from the graph datasets, possibly applying certain transformations or filters, and generates keys based on certain node characteristics. These keys assist in grouping potential matching nodes together in the subsequent reducer phase.
+
+##### SimilarityReducer
+
+The `SimilarityReducer` class receives the intermediate output from the mapper (grouped by key) and computes similarity scores for potential matches. This class might utilize the SimRank algorithm or other similarity computation methods to determine how alike two entities are. The final similarity scores are then output, which can be used for further processing or analysis.
+
+#### SimRank
+
+SimRank is a widely used algorithm to measure the similarity of two nodes within a graph. It is based on the idea that two nodes are considered similar if they are connected to similar neighbors. A typical representation of the SimRank formula is:
+
+\[ S(a, b) = \frac{C}{|I(a)||I(b)|} \sum_{i=1}^{|I(a)|} \sum_{j=1}^{|I(b)|} S(I_i(a), I_j(b)) \]
+
+Where:
+- \( S(a, b) \) is the similarity score between nodes \( a \) and \( b \).
+- \( C \) is a constant factor between 0 and 1.
+- \( I(a) \) and \( I(b) \) are the sets of in-neighbors for nodes \( a \) and \( b \) respectively.
+
+The algorithm is recursive in nature and may need multiple iterations to converge to a solution.
+
+#### File Formats and Data Storage
+
+The code snippet provided hints at the use of the Hadoop Distributed File System (HDFS) for storing and accessing data. Here are the notable points related to file formats and data storage:
+
+1. **HDFS**: It's evident that the application uses HDFS for data storage and retrieval. The paths such as `hdfsBase`, `originalGraphPath`, and `perturbedGraphPath` suggest the location of the graph datasets on HDFS.
+
+2. **Graph Files**: Two types of graph files are mentioned — the original and perturbed graphs. These might represent two different versions of a graph or two distinct graphs that need to be compared. 
+
+3. **Output Files**: The output of the MapReduce job is saved to HDFS with a timestamp, ensuring unique filenames for each run. This makes it easier to retrieve and distinguish between different runs of the job.
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
