@@ -10,35 +10,66 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [System Architecture](#system-architecture)
-3. [Code Logic and Flow](#code-logic-and-flow)
+2. [Quick Start](#quick-setup-guide)
+3. [Video Walkthru](#video)
+4. [System Architecture](#system-architecture)
+5. [Code Logic and Flow](#code-logic-and-flow)
    - [Initialization](#initialization)
    - [Data Loading and Pre-processing](#data-loading-and-pre-processing)
    - [Distributed Matching](#distributed-matching)
    - [Post-processing](#post-processing)
    - [Result Compilation](#result-compilation)
-4. [Generated Statistics](#generated-statistics)
+6. [Generated Statistics](#generated-statistics)
    - [Overview](#overview)
    - [Matching Metrics](#matching-metrics)
    - [Performance Metrics](#performance-metrics)
    - [Error Metrics](#error-metrics)
-   - [Visualization Tools](#visualization-tools)
-5. [Areas of Improvement](#areas-of-improvement)
-   - [Code Optimization](#code-optimization)
-   - [Statistical Methods](#statistical-methods)
-   - [Cloud Integration](#cloud-integration)
-   - [User Experience](#user-experience)
-6. [Known Bugs and Issues](#known-bugs-and-issues)
-7. [FAQs](#faqs)
-8. [Appendices](#appendices)
+7. [Areas of Improvement](#areas-of-improvement)
+8. [Known Bugs and Issues](#known-bugs-and-issues)
+9. [FAQs](#faqs)
+10. [Appendices](#appendices)
    - [Code Listings](#code-listings)
    - [References and Citations](#references-and-citations)
-9. [Contact and Support](#contact-and-support)
+
 
 ## Introduction
 The primary objective of this project is to leverage cloud-based frameworks and distributed computing technologies to analyze large-scale graph matching challenges. Using the [network simulator, NetGraphSim](https://github.com/0x1DOCD00D/NetGameSim), we generate expansive graphs representative of big data. These graphs undergo specialized perturbation operations to produce their modified counterparts. The key challenge lies in discerning the differences between the original and perturbed graphs. 
 
 This project not only aims to determine these differences but also seeks to quantify the matching accuracy through statistically robust methods. Our results not only offer a holistic matching score for the graphs but also provide insights into how closely individual nodes and edges correlate. While the graph isomorphism problem is NP-complete, our approximation algorithms attempt to solve real-world challenges by comparing nodes and edges, producing meaningful metrics to gauge similarity.
+
+## Quick Setup Guide
+1. **Clone the Repository:** 
+   ```
+   git clone https://github.com/0x1DOCD00D/CS441_Fall2023.git
+   ```
+
+2. **Navigate to Project Directory:**
+   ```
+   cd CS441_Fall2023
+   ```
+
+3. **Install Dependencies:** 
+   Make sure you have SBT (Scala Build Tool) installed.
+   ```
+   sbt compile
+   ```
+
+4. **Configure HDFS Settings:**
+   Modify the `hdfs.conf` file to point to your HDFS installation and directory structures.
+
+5. **Run the Application:** 
+   Use SBT's run command. Adjust parameters as needed.
+   ```
+   sbt run
+   ```
+
+6. For further configurations and detailed setup, refer to the main documentation.
+
+
+
+## Video
+
+For a detailed walkthrough, watch our [demo video](https://vimeo.com/873263825?share=copy#t=0). 
 
 ## System Architecture
 
@@ -234,8 +265,6 @@ The output data is written in a `<key, value>` format where:
 - **Key**: The pair of nodes being compared, e.g., `<node1, node2>`
 - **Value**: The Jaccard similarity score.
 
-## 3. Code Logic and Flow
-
 ### Post-processing
 
 After the MapReduce operation has completed its job, it is crucial to process the generated data to gain actionable insights. The post-processing phase consists of:
@@ -265,105 +294,6 @@ Once post-processing is complete, the program provides the final statistics. The
 
 3. **Results Explanation**: The `explainResults` function gives a user-friendly explanation of the metrics. This feature is especially useful for those unfamiliar with graph processing, as it translates complex metrics into understandable language.
 
-## 4. Generated Statistics
-
-### Overview
-
-The core purpose of the algorithm is to compare and match components between the original graph and its perturbed version. The generated statistics shed light on the algorithm's efficiency, accuracy, and areas of potential improvement.
-
-### Matching Metrics
-
-1. **Traceability Links (TL)**: Represents a match between components (nodes or edges) of the original graph and its altered version.
-2. **Good Traceability Links (GTL)**: Correct matches identified by the algorithm.
-3. **Bad Traceability Links (BTL)**: Errors in the algorithm's matching.
-
-### Performance Metrics
-
-1. **Accuracy (ACC)**: Fraction of matches the algorithm correctly identified.
-2. **Validation Precision Rate (VPR)**: Reflects the quality of matches.
-3. **Bad Traceability Links Rate (BTLR)**: Fraction of total matches that were errors.
-
-### Error Metrics
-
-1. **Wrong Traceability Links (WTL)**: Represents mismatches made by the algorithm.
-
-
---------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-
-
-
-## Prerequisites
-
-1. **Java**: Ensure that Java 1.8 is installed
-2. **Scala**: The project uses Scala version `3.2.2`.
-3. **SBT (Scala Build Tool)**: Ensure SBT is installed.
-4. **Hadoop**: The project requires Hadoop, especially if you intend to process data in the HDFS.
-
-## Setup
-
-1. **Cloning the Project**:
-   ```bash
-   git clone https://github.com/seyfal/MapReduceGraphComparison.git
-   cd SimRank
-   ```
-
-2. **Configuring Dependencies**:
-   The `build.sbt` file contains all the necessary dependencies:
-   - Typesafe Config Library: For configuration handling.
-   - Logback Classic Logger: For logging.
-   - SLF4J API Module: As a logging facade.
-   - ScalaTest: For unit testing.
-   - Hadoop Client: For Hadoop-related operations.
-
-## Configuration
-Configuration for SimRank is essential for successful execution. The following are the key parts:
-
-1. **App Configuration**: Defined in `application.conf` or any custom configuration file. It contains:
-   - Debug Mode
-   - Common Configuration: Includes pieces, similarity threshold, and depth.
-   - Local Configuration: Paths to files when running in a local environment.
-   - Cloud Configuration: Paths to files when running on a cloud environment like AWS.
-   
-2. **Hadoop Configuration**:
-   - `coreSitePath`: Path to Hadoop's core-site.xml.
-   - `hdfsSitePath`: Path to Hadoop's hdfs-site.xml.
-
-3. **HDFS Configuration**:
-   - User directory, paths for graphs, and HDFS base URL.
-
-4. **Job Configuration**:
-   - `jarPath`: Path to the assembled JAR for the job.
-
-## Building the Project
-To compile and package the project:
-```bash
-sbt clean compile assembly
-```
-
-This command will create a JAR file named `SimRank.jar` in the `target/scala-3.2.2/` directory.
-
-## Deployment and Execution
-1. **Local Execution**:
-   Adjust the local configuration paths as per your system. Then execute:
-   ```bash
-   sbt clean compile run
-   ```
-
-2. **Cloud/Hadoop Cluster Execution**:
-   Ensure Hadoop is properly set up, and adjust the cloud configuration paths to your S3 bucket or equivalent. Copy the JAR to your cluster:
-   ```bash
-   // modifications to code for the one line execution are in progress 
-   ```
-
-   See video for the walkthru of the cloud deployment 
-
-## Results
-
 Upon successful execution, the program will output similarity rankings. These results are influenced by:
 - The `similarityThreshold`: Data points with similarities above this threshold will be considered 'similar'.
 - The `similarityDepth`: Determines how deep the program looks into the data to determine similarities.
@@ -389,15 +319,56 @@ Here is the sample output you can expect after running the application:
 [info] ---- End of Explanation ----
 ```
 
-## Video and Further Documentation
+## Generated Statistics
 
-For a detailed walkthrough, watch our [demo video](https://vimeo.com/873263825?share=copy#t=0). In Depth documentation is on the way. 
+### Overview
 
-## Limitations
+The core purpose of the algorithm is to compare and match components between the original graph and its perturbed version. The generated statistics shed light on the algorithm's efficiency, accuracy, and areas of potential improvement.
 
-1. **Memory Consumption**: Due to JVM heap size limits (`-Xmx2G`), datasets that require substantial memory might face issues.
-2. **Single Threshold Level**: The application uses a single `similarityThreshold`, which may not be optimal for all use-cases.
-3. **Unreliable Algorithm**
-4. **Cloud and LocalHost versions have not been combined** 
+### Matching Metrics
 
-**Note**: If you need more details or face any issues setting up, feel free to reach out. I'am here to help!
+1. **Traceability Links (TL)**: Represents a match between components (nodes or edges) of the original graph and its altered version.
+2. **Good Traceability Links (GTL)**: Correct matches identified by the algorithm.
+3. **Bad Traceability Links (BTL)**: Errors in the algorithm's matching.
+
+### Performance Metrics
+
+1. **Accuracy (ACC)**: Fraction of matches the algorithm correctly identified.
+2. **Validation Precision Rate (VPR)**: Reflects the quality of matches.
+3. **Bad Traceability Links Rate (BTLR)**: Fraction of total matches that were errors.
+
+### Error Metrics
+
+1. **Wrong Traceability Links (WTL)**: Represents mismatches made by the algorithm.
+
+## Areas of Improvement
+### 1. Algorithm Robustness
+Our current implementation provides a decent starting point for graph comparison and matching, but there's room for more complex and accurate algorithms. Exploring state-of-the-art methodologies can improve both accuracy and efficiency, catering to a broader range of use cases.
+
+### 2. Advanced Data Storage in HDFS
+With growing data sizes, there's a need to reconsider our current storage strategy in HDFS. Here are some ideas to explore:
+
+- **Partitioned Storage:** By breaking the graph data into smaller partitions or blocks, we can optimize read/write speeds and also ensure data redundancy.
+  
+- **Compression:** Employing compression techniques can reduce the storage space and potentially speed up data transfer times. We'll have to ensure, however, that the compression and decompression overhead doesn't outweigh the benefits.
+  
+- **Hybrid Cloud-Local Storage:** As mentioned, a system where both cloud and local storage solutions coexist can be invaluable. The goal would be to store frequently accessed or crucial data locally and push less critical or bulky data to the cloud.
+
+### 3. Unified Version for Cloud and Local 
+Our application is currently split into separate versions for local and cloud environments. A unified version, capable of recognizing and adapting to its runtime environment, would streamline the deployment process and reduce maintenance efforts.
+
+### 4. Support for .ngs Files from NetGameSim
+Direct support for `.ngs` files will allow users to easily integrate with the NetGameSim system, bypassing manual conversions or extractions. This would involve building a dedicated parser for these files and ensuring compatibility with our existing structures.
+
+## Known Bugs and Issues
+- **Dual Versions:** As highlighted above, we currently lack a singular version running both on cloud and locally. The bifurcation may lead to inconsistencies in results or performance.
+
+- **Limited File Support:** The system doesn't support `.ngs` files from NetGameSim directly. A converter or direct parser needs to be implemented to bridge this gap.
+
+## Appendices
+
+### References and Citations
+- **NetGameSim Project:** Owned by Professor Mark Grechanik, this project provides the foundational simulation structures and tools. [Link](https://github.com/0x1DOCD00D/NetGameSim)
+  
+- **CS441_Fall2023 Homework Assignment:** The main task description and requirements that led to this project. [Link](https://github.com/0x1DOCD00D/CS441_Fall2023)
+   
