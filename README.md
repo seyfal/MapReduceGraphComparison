@@ -175,46 +175,66 @@ Throughout the data loading and preprocessing stages, there are various checkpoi
 - Any unexpected error is also caught and logged, ensuring that the application doesn't crash abruptly.
 
 ### Distributed Matching
-Distributed matching is the core operation of the given application. It involves matching nodes or entities across two graphs to determine their similarity scores. By using a distributed system, the process efficiently scales to handle vast amounts of data by distributing the computational task among multiple machines. In this section, we'll discuss the primary components involved in the distributed matching process.
 
-#### Mapper and Reducer
+Distributed Matching is the core of the application, involving the comparison and mapping of nodes between two graphs in a distributed fashion. It utilizes the MapReduce framework, enabling efficient distributed processing of large-scale datasets.
 
-Before diving into the detailed logic of the MapReduce process, it's crucial to understand the purpose of the mapper and reducer classes in the context of distributed computing:
+#### Distributed System Configuration
 
-1. **Mapper**: The primary goal of the mapper is to process input data and produce intermediate data. The mapper typically processes data line by line and outputs key-value pairs.
+The system first configures the job by assigning it a name and setting up the environment:
 
-2. **Reducer**: The reducer class aggregates the intermediate data produced by the mapper. The framework groups the intermediate data by key and sends it to the respective reducer. The reducer then processes this data to produce the final output.
+```scala
+val job = Job.getInstance(new Configuration(), "NodeSimilarityJob")
+```
 
-##### SimilarityMapper
+Additionally, it also specifies the JAR file location, which contains the classes required to run the job:
 
-The `SimilarityMapper` class is the application's mapper that processes the input graphs and outputs key-value pairs to identify potential matches. Without the full code, we can only infer that the `SimilarityMapper` processes nodes or edges from the graph datasets, possibly applying certain transformations or filters, and generates keys based on certain node characteristics. These keys assist in grouping potential matching nodes together in the subsequent reducer phase.
+```scala
+job.setJar(jobJarPath)
+```
 
-##### SimilarityReducer
+To make the original and perturbed graphs available to all nodes in the cluster, they're added to the job's distributed cache:
 
-The `SimilarityReducer` class receives the intermediate output from the mapper (grouped by key) and computes similarity scores for potential matches. This class might utilize the SimRank algorithm or other similarity computation methods to determine how alike two entities are. The final similarity scores are then output, which can be used for further processing or analysis.
+```scala
+job.addCacheFile(new URI(s"$hdfsBase$originalGraphPath"))
+job.addCacheFile(new URI(s"$hdfsBase$perturbedGraphPath"))
+```
 
-#### SimRank
+#### Mapper Class - SimilarityMapper
 
-SimRank is a widely used algorithm to measure the similarity of two nodes within a graph. It is based on the idea that two nodes are considered similar if they are connected to similar neighbors. A typical representation of the SimRank formula is:
+The `SimilarityMapper` class serves the purpose of computing the similarity between a pair of nodes - one from the original graph and the other from the perturbed graph. The similarity computation is done locally on each mapper.
 
-\[ S(a, b) = \frac{C}{|I(a)||I(b)|} \sum_{i=1}^{|I(a)|} \sum_{j=1}^{|I(b)|} S(I_i(a), I_j(b)) \]
+Upon initialization:
 
-Where:
-- \( S(a, b) \) is the similarity score between nodes \( a \) and \( b \).
-- \( C \) is a constant factor between 0 and 1.
-- \( I(a) \) and \( I(b) \) are the sets of in-neighbors for nodes \( a \) and \( b \) respectively.
+1. It reads the original and perturbed graphs from the distributed cache, using the `loadGraphFromHDFS` method.
+2. It then processes each pair of nodes, and for each pair:
+    - It calculates the similarity score using the `jaccardSimilarity` method from the `SimRank` class.
+    - If the similarity score surpasses a specified threshold, the pair and its similarity score are written to the context as output. This is done to avoid flooding the reducer with insignificant results.
 
-The algorithm is recursive in nature and may need multiple iterations to converge to a solution.
+#### Reducer Class - SimilarityReducer
 
-#### File Formats and Data Storage
+The `SimilarityReducer` class takes pairs of nodes (keys) and their associated similarity scores (values). For each pair, it determines the highest similarity score and writes this maximum value to the output.
 
-The code snippet provided hints at the use of the Hadoop Distributed File System (HDFS) for storing and accessing data. Here are the notable points related to file formats and data storage:
+The computation of the maximum similarity score is done in a recursive manner with the `getMaxSimilarity` method.
 
-1. **HDFS**: It's evident that the application uses HDFS for data storage and retrieval. The paths such as `hdfsBase`, `originalGraphPath`, and `perturbedGraphPath` suggest the location of the graph datasets on HDFS.
+#### Similarity Computation - SimRank Class
 
-2. **Graph Files**: Two types of graph files are mentioned — the original and perturbed graphs. These might represent two different versions of a graph or two distinct graphs that need to be compared. 
+The `SimRank` class contains methods for computing node similarity. The chosen similarity metric is the Jaccard similarity, which measures similarity between two sets. Here, these sets are subgraphs centered on the two nodes being compared.
 
-3. **Output Files**: The output of the MapReduce job is saved to HDFS with a timestamp, ensuring unique filenames for each run. This makes it easier to retrieve and distinguish between different runs of the job.
+Steps:
+
+1. **Local Subgraph Extraction**: For both nodes, their respective local subgraphs up to a specified depth are extracted using `extractLocalSubgraph`.
+2. **Jaccard Similarity Computation**: The Jaccard similarity between the two subgraphs is computed using the formula:
+
+\[ \text{Similarity} = \frac{|\text{intersection of nodes}|}{|\text{union of nodes}|} \]
+
+#### Output Format
+
+The output data is written in a `<key, value>` format where:
+
+- **Key**: The pair of nodes being compared, e.g., `<node1, node2>`
+- **Value**: The Jaccard similarity score.
+
+#### Questions for Documentation:
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
