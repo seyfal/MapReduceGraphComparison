@@ -203,6 +203,9 @@ project/plugins/project/
 
 ### Scala ###
 
+# Ignore the .idea directory (common for JetBrains IDEs)
+.idea/
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,sbt,scala,java,osx,macos
