@@ -9,7 +9,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 
-# Distributed Graph Matching: Code Documentation
+# Distributed Graph Matching: 
 
 ## Table of Contents
 1. [Introduction](#introduction)
