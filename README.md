@@ -9,12 +9,6 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 
-## My Submission: 
-1. **Seyfal Sultanov**
-2. **NetID: ssulta24**
-3. **UIC Email: ssulta24@uic.edu**
-4. **UIN: 678686497**
-
 # Distributed Graph Matching: Code Documentation
 
 ## Table of Contents
